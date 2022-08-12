@@ -1,0 +1,1 @@
+$('header').load('inc.html > .header');
