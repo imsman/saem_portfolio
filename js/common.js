@@ -1,11 +1,11 @@
-$('header').load('inc.html > .header',ques);
+// $('header').load('inc.html > .header',ques);
 
 
-const mark = document.querySelector('.question > #question');
-const copy = document.querySelector('.question > .pop');
+// const mark = document.querySelector('.question > #question');
+// const copy = document.querySelector('.question > .pop');
 
-function ques(){
-    mark.addEventListener('click',function(){
-        copy.classList.add('active');
-    })
-}
+// function ques(){
+//     mark.addEventListener('click',function(){
+//         copy.classList.add('active');
+//     })
+// }
