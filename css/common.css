@@ -32,3 +32,201 @@
 p{
     font-family: 'OTWelcomeRA';
 }
+
+body {
+    position: relative;
+}
+
+body>.pop {
+    position: fixed;
+    top: 770px;
+    left: 45px;
+    z-index: 105;
+    display: none;
+}
+
+body>.pop>.ans {
+    padding: 15px 20px 30px;
+    background-color: #FFEC88;
+    border-radius: 30px;
+    font-size: 12px;
+    line-height: 1.2;
+    width: 350px;
+    height: 70px;
+}
+
+body>.pop.active {
+    display: block;
+}
+
+body header .header {
+    width: 140px;
+    height: 100vh;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    z-index: 100;
+    background-color: #8563E7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    vertical-align: middle;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+body header .header>a {
+    width: 60%;
+    margin: 50px auto;
+    -webkit-animation: rot 2s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
+    animation: rot 2s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
+}
+
+body header .header>a>img {
+    width: 100%;
+}
+
+body header .header>a:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+body header .header .indi {
+    width: 60%;
+    margin: 50px auto;
+    padding-bottom: 30px;
+}
+
+body header .header .indi>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+body header .header .indi>ul>li {
+    width: 100%;
+}
+
+body header .header .indi>ul>li>a {
+    width: 100%;
+}
+
+body header .header .indi>ul>li>a>svg {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+body header .header .indi>ul>li>a>svg.active {
+    stroke: black;
+}
+
+body header .header>.question {
+    width: 50px;
+    margin: 50px auto;
+    height: 50px;
+    background-color: #FFEC88;
+    border-radius: 50px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 5.5%;
+}
+
+body header .header>.question>p {
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+
+body>main {
+    margin-left: 140px;
+}
+
+body>main>.top {
+    width: 100%;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    vertical-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 2px solid #E8E5FF;
+}
+
+body>main>.top>.resume {
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    vertical-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body>main>.top>.resume>svg {
+    width: 8%;
+}
+
+body>main>.top>.resume>p {
+    width: 90%;
+    text-align: right;
+    font-size: 13px;
+    color: #979797;
+}
+
+body>main>.top>.me {
+    width: 10%;
+    margin-right: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    vertical-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body>main>.top>.me>p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    vertical-align: center;
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+body>main>.top>.me>img {
+    width: 30%;
+}

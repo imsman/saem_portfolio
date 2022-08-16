@@ -48,6 +48,8 @@ main .web_main {
 main .web_main .hello {
   margin: 0;
   padding: 0;
+  position:relative;
+  z-index:300;
 }
 
 main .web_main .hello > p{

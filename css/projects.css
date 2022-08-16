@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+@import url('./common.css');
+
+main > .title{
+    margin:70px 0;
+    margin-left:100px;
+}
+
+main > .content{
+    width:80%;
+    margin:40px 0;
+    margin-left:100px;
+    display:flex;
+    justify-content: space-between;
+    vertical-align: center;
+    align-items: center;
+}
+main > .content > .site{
+    width:30%;
+    position:relative;
+}
+main > .content > .site > p.num{
+    position:absolute;
+    top:20%; left:10%;
+    font-size:200px;
+    z-index:1;
+    font-weight:bolder;
+    color: rgb(255, 236, 136);
+}
+main > .content > .site > h1{
+
+}
+main > .content > .site > .sub{}
+main > .content > .site > .ex{}
+
+main > .content > .preview{
+    width:60%;
+
+}
+main > .content > .preview > .bg{}
+main > .content > .preview > .bg > div{}
+main > .content > .preview > .bg > div > img{}

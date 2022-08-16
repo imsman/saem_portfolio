@@ -335,7 +335,7 @@ body > main > .introduce > .left > .left_bg {
 }
 
 body > main > .introduce > .left > .left_bg > h2 {
-  margin: 80px 0;
+  margin: 70px 0;
 }
 
 body > main > .introduce > .left > .left_bg > img {
@@ -534,7 +534,7 @@ body > main > .introduce > a {
   text-align: center;
   text-decoration: none;
   color: black;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   display: inline-block;
   position: fixed;

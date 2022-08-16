@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+@import url('./common.css');
+
+
+main>.to {
+    margin: 70px 0 0;
+    margin-left: 100px;
+}
+
+main>.to>.title {
+    margin-bottom: 50px;
+}
+
+main>.to>p:nth-of-type(1) {
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    font-weight:lighter;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content>.box_bg {
+    width: 990px;
+    height: 450px;
+    border-radius: 30px;
+    padding:20px 40px;
+    background-color: #E8E5FF;
+    display:flex;
+    justify-content: space-around;
+}
+
+.content>.box_bg>.percentage {
+    border:1px solid black;
+    margin-top:40px;
+    width:40%;
+    height:80%;
+}
+
+.content>.box_bg>.percentage>.circle {
+    width:100%;
+    text-align:center;
+}
+
+.content>.box_bg>.percentage>.circle>p {
+    font-size:60px;
+    font-family: 'GangwonEduAll';
+}
+
+.content>.box_bg>.info {
+    width:40%;
+    height:90%;
+    margin:5% 0;
+}
+.content>.box_bg >.info >p {
+    font-size:1.6em;
+    margin:20px 0;
+}
+
+.content>.box_bg >.info > ul {
+    width:100%;
+    margin-top:30px;
+}
+
+.content>.box_bg>.info>ul>li {
+    width:100%;
+    margin:20px auto;
+    white-space:pre-line;
+}
+
+.content>.tool {
+    width: 20%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+}
+
+.content>.tool>button {
+    width:35%;
+    height:22%;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid coral;
+    border-radius:40px;
+    font-size:1em;
+}
+.content>.tool>button.active{
+    background-color:coral;
+    /* 플러그인넣어서 색 입히기 */
+}
+
+.to > p:nth-of-type(2) {
+    margin: 50px 0;
+    white-space: pre-line;
+    font-size: 1em;
+    line-height: 1.2;
+    font-weight:lighter;
+}
+
+
+main>a {
+    width: 130px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: inline-block;
+    position: fixed;
+    bottom: 10%;
+    right: 8%;
+    z-index: 300;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-bottom: 5px;
+}
+
+main>a:hover {
+    color: white;
+    background-color: #3d2486;
+    opacity: 70%;
+}
