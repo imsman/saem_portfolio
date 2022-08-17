@@ -1,11 +1,6 @@
-// $('header').load('inc.html > .header',ques);
+const mark = document.querySelector('.question');
+const copy = document.querySelector('.pop');
 
-
-// const mark = document.querySelector('.question > #question');
-// const copy = document.querySelector('.question > .pop');
-
-// function ques(){
-//     mark.addEventListener('click',function(){
-//         copy.classList.add('active');
-//     })
-// }
+mark.addEventListener('click', function () {
+    copy.classList.toggle('active');
+})

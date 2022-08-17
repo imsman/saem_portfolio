@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projects</title>
-    <script defer src="./js/projects.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./js/projects.js"></script>
+    <script defer src="./js/common.js"></script>
     <link rel="stylesheet" href="./css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
 </head>
 
 <body>
@@ -110,38 +116,15 @@
 
         <h2 class="title">Projects</h2>
 
-        <!-- json만들까 그냥 칠까 고민중
-        근디 유지보수에 쉬울라면 그냥 json이 나을텐데....? -->
-        <div class="content">
-
-            <div class="site">
-                <p class="num">01</p>
-                <h1>MINIDECO</h1>
-                <p class="sub">미니어처 가구 쇼핑몰 리뉴얼</p>
-
-                <p class="ex">
-                    기존 미니데코 페이지는 네비게이터 바의 효율성이 낮고, 메뉴 그룹화가 제대로 이루어지지 않아 여러 분야의 메뉴가 뒤섞여있었습니다.<br>
-                    또한 사용자의 흥미를 끌 수 있는 이벤트, 프로모션을 효과적으로 노출시키지 않았습니다.
-                    <br><br>
-                    제가 리뉴얼한 미니데코는 메뉴를 다시 그룹화해 사용자의 접근성과<br>
-                    편의성을 높였습니다. 이벤트 배너를 섹션 사이에 넣어 사용자가 페이<br>
-                    지를 보다가 자연스럽게 확인할 수 있도록 배치했습니다. 또한 페이지<br>
-                    마다 사이드바를 배치해 어디서든 마이페이지, 장바구니, 위시리스트 <br>
-                    등의 회원관리 메뉴의 접근성을 높였습니다.
-                </p>
-            </div>
-
-            <div class="preview">
-                <div class="bg">
-                    <div>
-                        <img src="./img/projects/minideco_full.png" alt="">
-                        <!-- 세개 합친 이미지를 png로 만들기 -->
-                    </div>
-                </div>
-            </div>
+        <div class="content mySwiper">
+            <ul class="slide swiper-wrapper">
+            </ul>
+            <div class="swiper-button-next">Next</div>
+            <div class="swiper-button-prev">Prev</div>
         </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* @font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: ''
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#7E5AC7, #E8DED3);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+body {
+  user-select: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+}
+
+main .web_main {
+  margin-top: 350px;
+  margin-left: 320px;
+  text-align: left;
+}
+
+main .web_main .hello {
+  margin: 0;
+  padding: 0;
+  position:relative;
+  z-index:300;
+}
+
+main .web_main .hello > p{
+  font-family: 'GangwonEdu_OTFBoldA';
+  font-size: 3.5em;
+  color:white;
+  font-weight:bold;
+  margin: 20px 0;
+}
+main .web_main .hello > p:nth-of-type(2){
+  margin-top:20px;
+}
+
+.hello .window {
+  height:70px;
+  margin: 10px 0;
+  overflow:hidden;
+}
+
+.hello .window .swiper-wrapper {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  vertical-align: middle;
+  text-align:start;
+}
+
+.hello .window .swiper-wrapper .swiper-slide {
+  flex-shrink:0;
+}
+
+.hello .window .swiper-wrapper .swiper-slide p{
+  display:inline-block;
+  padding:15px 20px;
+  font-size:1.5em;
+  color:#7E5AC7;
+  background-color: #FFEC88;
+  border-radius:30px;
+}
+
+
+main .web_main .illust {
+  position: absolute;
+  left:60%; top:-50%;
+  z-index:1;
+}
+
+main .web_main .illust img {
+  width:80%;
+}
+
+main .web_footer {
+  position:absolute;
+  z-index:20;
+  left:45%; top:200%;
+  text-align:center;
+}
+
+main .web_footer .announce{
+  color:white;
+  font-weight:bold;
+  text-align:center;
+}
+main .web_footer .announce::after{
+  content:'';
+  display:block;
+  border:1px solid white;
+  width:0%;
+  opacity:0;
+  transition:0.5s;
+}
+
+
+main .web_footer .announce:hover::after{
+  width:100%;
+  opacity:1;
+}
+
+
+main .web_footer .mouse {
+  position:relative;
+  z-index:300;
+  transform:scale(0.7);
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .web_footer .mouse #mouse {
+  margin-bottom:10px;
+  animation: mouse 2s forwards ease-in-out;
+  
+}
+@keyframes mouse{
+  0%{transform:translateY(0px); opacity:50%;}
+  100%{transform:translateY(10px); opacity:100%;}
+}
+
+main .web_footer svg:nth-of-type(2) {
+  animation:down1 1s forwards ease-in-out;
+}
+/* 스크립트로 시간 맞추기?? */
+
+@keyframes down1{
+  0%{transform:translateY(0px); opacity:0%}
+  50%{transform:translateY(2.5px); opacity:50%}
+  100%{transform:translateY(5px); opacity:100%}
+}
+
+main .web_footer svg:nth-of-type(3) {
+  animation:down2 1.5s forwards ease-in-out;
+  animation-delay:0.5s;
+}
+
+@keyframes down2{
+  0%{transform:translateY(0px); opacity:0%}
+  50%{transform:translateY(2.5px); opacity:50%}
+  100%{transform:translateY(5px); opacity:100%}
+}
+
+main .web_footer svg:nth-of-type(4) {
+  animation:down 2s forwards ease-in-out;
+  animation-delay:1s;
+}
+
+@keyframes down{
+  0%{transform:translateY(0px); opacity:0%}
+  50%{transform:translateY(2.5px); opacity:50%}
+  100%{transform:translateY(5px); opacity:100%}
+}
+
+
+.liquid {
+  width: 100%;
+  height:90vh;
+  position: absolute;
+  left: 0;
+  bottom:-10%;
+  z-index: 1;
+}
+
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index:10;
+  /* display: grid; */
+  align-items: center;
+  justify-content: center;
+}
+
+#visual {
+  width: 100%;
+  /* border: 4px solid #001220; */
+  padding: 0px;
+  margin: 0px;
+}

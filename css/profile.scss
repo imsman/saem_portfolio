@@ -1,68 +1,49 @@
 @import url('./common.css');
 
-
 @keyframes rot {
     0% {
         transform: rotate(0deg)
-    }
-
-    ;
+    };
 
     25% {
         transform: rotate(90deg)
-    }
-
-    ;
+    };
 
     50% {
         transform: rotate(180deg)
-    }
-
-    ;
+    };
 
     75% {
         transform: rotate(270deg)
-    }
-
-    ;
+    };
 
     100% {
         transform: rotate(360deg)
-    }
-
-    ;
+    };
 }
 
 @keyframes appear {
     0% {
         opacity: 0;
         transform: translateX(100px)
-    }
-
-    ;
+    };
 
     100% {
         opacity: 100%;
         transform: translateX(0px)
-    }
-
-    ;
+    };
 }
 
-@keyframes rtol {
+@keyframes up {
     0% {
         opacity: 0;
-        transform: translateY(-100px)
-    }
-
-    ;
+        transform: translateY(50px);
+    };
 
     100% {
         opacity: 100%;
-        transform: translateY(0)
-    }
-
-    ;
+        transform: translateY(0);
+    };
 }
 
 
@@ -207,8 +188,9 @@ body {
                 >p {
                     width: 90%;
                     text-align: right;
-                    font-size: 13px;
+                    font-size: 1em;
                     color: #979797;
+                    padding-top:2px;
                 }
             }
 
@@ -227,7 +209,9 @@ body {
                     align-items: flex-end;
                     vertical-align: center;
                     margin-right: 30px;
-                    font-size: 13px;
+                    >span{
+                        font-size: 15px;
+                    }
                 }
 
                 >img {
@@ -286,6 +270,8 @@ body {
 
                                 >p {
                                     padding: 5px;
+                                    font-size:1.2em;
+                                    text-align:center;
                                 }
                             }
                         }
@@ -298,6 +284,7 @@ body {
 
                                 >p {
                                     padding: 5px;
+                                    font-size:1.2em;
                                 }
                                 >p:last-child{
                                     white-space: pre-line;
@@ -361,14 +348,14 @@ body {
                         >img.icon {
                             width: 12%;
                             position: absolute;
-                            left:25%;
-                            top: 0%;
+                            left:28%;
+                            top: -5%;
                             z-index: 104;
 
                         }
 
                         >img.box {
-                            width: 60%;
+                            width: 70%;
                             position: absolute;
                             left: 15%;
                             top: 5%;
@@ -378,19 +365,23 @@ body {
 
                         >.text {
                             width: 80%;
+                            height:180px;
                             position: absolute;
-                            left: 5%;
-                            top: 22%;
+                            left: 10%;
+                            top: 12%;
                             z-index: 104;
+                            display:flex;
+                            flex-direction:column;
+                            justify-content: space-evenly;
 
                             >b {
-                                font-size: 1em;
+                                font-size: 1.3em;
                                 font-weight: bold;
                             }
 
                             >p {
                                 padding-top: 16px;
-                                font-size: 0.8em;
+                                font-size: 1em;
                                 line-height: 1.4;
 
                             }
@@ -410,7 +401,7 @@ body {
                             opacity: 0;
 
                             &.active {
-                                animation: rtol 0.5s forwards ease-in-out;
+                                animation: up 0.3s forwards ease-in-out;
                                 display: inline-block;
                                 opacity: 100%;
                             }

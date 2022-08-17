@@ -29,7 +29,7 @@
     font-size: 40px;
 }
 
-p{
+p {
     font-family: 'OTWelcomeRA';
 }
 
@@ -85,8 +85,29 @@ body header .header {
 body header .header>a {
     width: 60%;
     margin: 50px auto;
-    -webkit-animation: rot 2s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
     animation: rot 2s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg)
+    };
+
+    25% {
+        transform: rotate(90deg)
+    };
+
+    50% {
+        transform: rotate(180deg)
+    };
+
+    75% {
+        transform: rotate(270deg)
+    };
+
+    100% {
+        transform: rotate(360deg)
+    };
 }
 
 body header .header>a>img {
@@ -190,8 +211,9 @@ body>main>.top>.resume>svg {
 body>main>.top>.resume>p {
     width: 90%;
     text-align: right;
-    font-size: 13px;
+    font-size: 1em;
     color: #979797;
+    padding-top: 2px;
 }
 
 body>main>.top>.me {
@@ -224,7 +246,10 @@ body>main>.top>.me>p {
     align-items: flex-end;
     vertical-align: center;
     margin-right: 30px;
-    font-size: 13px;
+}
+
+body>main>.top>.me>p>span {
+    font-size: 15px;
 }
 
 body>main>.top>.me>img {

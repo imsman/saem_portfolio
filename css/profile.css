@@ -70,11 +70,11 @@
   }
 }
 
-@-webkit-keyframes rtol {
+@-webkit-keyframes up {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   100% {
     opacity: 100%;
@@ -83,11 +83,11 @@
   }
 }
 
-@keyframes rtol {
+@keyframes up {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   100% {
     opacity: 100%;
@@ -253,8 +253,9 @@ body > main > .top > .resume > svg {
 body > main > .top > .resume > p {
   width: 90%;
   text-align: right;
-  font-size: 13px;
+  font-size: 1em;
   color: #979797;
+  padding-top: 2px;
 }
 
 body > main > .top > .me {
@@ -287,7 +288,10 @@ body > main > .top > .me > p {
           align-items: flex-end;
   vertical-align: center;
   margin-right: 30px;
-  font-size: 13px;
+}
+
+body > main > .top > .me > p > span {
+  font-size: 15px;
 }
 
 body > main > .top > .me > img {
@@ -367,6 +371,8 @@ body > main > .introduce > .left > .left_bg > .profile > ul.q > li {
 
 body > main > .introduce > .left > .left_bg > .profile > ul.q > li > p {
   padding: 5px;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 body > main > .introduce > .left > .left_bg > .profile > ul.a {
@@ -379,6 +385,7 @@ body > main > .introduce > .left > .left_bg > .profile > ul.a > li {
 
 body > main > .introduce > .left > .left_bg > .profile > ul.a > li > p {
   padding: 5px;
+  font-size: 1.2em;
 }
 
 body > main > .introduce > .left > .left_bg > .profile > ul.a > li > p:last-child {
@@ -442,13 +449,13 @@ body > main > .introduce > .right > .ex > div {
 body > main > .introduce > .right > .ex > div > img.icon {
   width: 12%;
   position: absolute;
-  left: 25%;
-  top: 0%;
+  left: 28%;
+  top: -5%;
   z-index: 104;
 }
 
 body > main > .introduce > .right > .ex > div > img.box {
-  width: 60%;
+  width: 70%;
   position: absolute;
   left: 15%;
   top: 5%;
@@ -457,20 +464,31 @@ body > main > .introduce > .right > .ex > div > img.box {
 
 body > main > .introduce > .right > .ex > div > .text {
   width: 80%;
+  height: 180px;
   position: absolute;
-  left: 5%;
-  top: 22%;
+  left: 10%;
+  top: 12%;
   z-index: 104;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 body > main > .introduce > .right > .ex > div > .text > b {
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
 body > main > .introduce > .right > .ex > div > .text > p {
   padding-top: 16px;
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 1.4;
 }
 
@@ -488,8 +506,8 @@ body > main > .introduce > .right > .ex > div > .hover {
 }
 
 body > main > .introduce > .right > .ex > div > .hover.active {
-  -webkit-animation: rtol 0.5s forwards ease-in-out;
-          animation: rtol 0.5s forwards ease-in-out;
+  -webkit-animation: up 0.3s forwards ease-in-out;
+          animation: up 0.3s forwards ease-in-out;
   display: inline-block;
   opacity: 100%;
 }

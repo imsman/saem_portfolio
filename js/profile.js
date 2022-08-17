@@ -1,10 +1,3 @@
-const mark = document.querySelector('.question');
-const copy = document.querySelector('.pop');
-
-mark.addEventListener('click', function () {
-    copy.classList.toggle('active');
-})
-
 
 const ex = document.querySelectorAll('.right > .ex > div');
 const exBox = document.querySelectorAll('.right > .ex > div > .hover');
@@ -14,6 +7,14 @@ const two = document.querySelector('.two');
 const three = document.querySelector('.three');
 const four = document.querySelector('.four');
 
+const active = document.getElementsByClassName('active');
+
+if (active) {
+    one.style.marginTop = '0px';
+    two.style.marginTop = '300px';
+    three.style.marginTop = '0px';
+    four.style.marginTop = '0px';
+} //active 되어있는 div 위치 알아내고 그 명령가있기
 
 ex.forEach(function (v, i) {
 
@@ -42,7 +43,7 @@ ex.forEach(function (v, i) {
             two.style.marginTop = '0px';
             three.style.marginTop = '0px';
             four.style.marginTop = '300px';
-        }else if(i == 3){
+        } else if (i == 3) {
             one.style.marginTop = '0px';
             two.style.marginTop = '0px';
             three.style.marginTop = '0px';
