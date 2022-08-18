@@ -1,25 +1,11 @@
 @import url('./common.css');
 
 @keyframes rot {
-    0% {
-        transform: rotate(0deg)
-    };
-
-    25% {
-        transform: rotate(90deg)
-    };
-
-    50% {
-        transform: rotate(180deg)
-    };
-
-    75% {
-        transform: rotate(270deg)
-    };
-
-    100% {
-        transform: rotate(360deg)
-    };
+    0% {transform: rotate(0deg)};
+    25% {transform: rotate(90deg)};
+    50% {transform: rotate(180deg)};
+    75% {transform: rotate(270deg)};
+    100% {transform: rotate(360deg)};
 }
 
 @keyframes appear {
@@ -27,7 +13,6 @@
         opacity: 0;
         transform: translateX(100px)
     };
-
     100% {
         opacity: 100%;
         transform: translateX(0px)
@@ -39,7 +24,6 @@
         opacity: 0;
         transform: translateY(50px);
     };
-
     100% {
         opacity: 100%;
         transform: translateY(0);
@@ -72,7 +56,7 @@ body {
         // }
 
         >.ans {
-            padding: 15px 20px 30px;
+            padding: 15px 20px 10px;
             background-color: #FFEC88;
             border-radius: 30px;
             font-size: 12px;
@@ -288,7 +272,7 @@ body {
                                 }
                                 >p:last-child{
                                     white-space: pre-line;
-                                    line-height:1.3;
+                                    line-height:1.2;
                                 }
                             }
                         }
@@ -382,7 +366,7 @@ body {
                             >p {
                                 padding-top: 16px;
                                 font-size: 1em;
-                                line-height: 1.4;
+                                line-height: 1.2;
 
                             }
                         }

@@ -2,8 +2,9 @@
 
 @import url('./common.css');
 
-body,html{
-    overflow:hidden;
+body,
+html {
+    overflow: hidden;
 }
 
 main>.title {
@@ -18,9 +19,9 @@ main>.content {
 }
 
 main>.content>ul {
-    margin-top:20px;
+    margin-top: 20px;
     width: 100%;
-    height:900px;
+    height: 900px;
     list-style: none;
     list-style-type: none;
 }
@@ -29,17 +30,18 @@ main>.content>ul {
 
 main>.content>ul>li {
     width: 100%;
-    flex-shrink:0;
+    flex-shrink: 0;
     display: flex;
     justify-content: space-between;
     vertical-align: top;
+    position:relative;
     /* align-items: center; */
     /* border:1px solid blue; */
 }
 
 main>.content>ul>li>.site {
     width: 30%;
-    position:relative;
+    position: relative;
 }
 
 main>.content>ul>li>.site>p.num {
@@ -54,8 +56,9 @@ main>.content>ul>li>.site>b {
     width: 100%;
     font-size: 3em;
     font-weight: lighter;
-    position:absolute;
-    top:110px; left:2%;
+    position: absolute;
+    top: 110px;
+    left: 2%;
 }
 
 main>.content>ul>li>.site>p.sub {
@@ -63,7 +66,7 @@ main>.content>ul>li>.site>p.sub {
     font-size: 20px;
     color: #a3a3a3;
     word-wrap: break-word;
-    transform:translate(15px,-30px);
+    transform: translate(15px, -30px);
 }
 
 main>.content>ul>li>.site>p.ex {
@@ -74,18 +77,50 @@ main>.content>ul>li>.site>p.ex {
     white-space: pre-line;
     line-height: 1.2;
     word-wrap: break-word;
-    transform:translate(15px,-30px);
+    transform: translate(15px, -30px);
 
 }
+
+main>.content>ul>li>.more{
+    width:12%;
+    position:absolute;
+    top:60%; left:0%;
+    z-index:100;
+    display:flex;
+    justify-content: space-between;
+}
+
+main>.content>ul>li>.more > a{
+    font-size:1em;
+    color:white;
+    display:inline;
+    text-align:center;
+    background-color:#aba0d8;
+    border-radius:20px;
+    padding:10px 5px;
+}
+main>.content>ul>li>.more > a:nth-of-type(1){
+    width:35%;
+}
+main>.content>ul>li>.more > a:nth-of-type(2){
+    width:55%;
+}
+
 
 main>.content>ul>li>.preview {
     width: 60%;
     /* border: 1px solid black; */
     height: 570px;
+    position: relative;
+}
+
+main>.content>ul>li>.preview > a{
+    width:100%;
+    height:100%;
     position:relative;
 }
 
-main>.content>ul>li>.preview>.bg {
+main>.content>ul>li>.preview>a> .bg {
     width: 100%;
     height: 100%;
     background-color: #aba0d8;
@@ -93,52 +128,82 @@ main>.content>ul>li>.preview>.bg {
     border-bottom-left-radius: 30px;
     overflow: hidden;
 }
-main>.content>ul>li>.preview>.bg>img {
+
+main>.content>ul>li>.preview >a>.bg >img {
     width: 100%;
-    margin:auto 0;
+    margin: auto 0;
 }
 
-main>.content>ul>li>.preview>.back {
-    position:absolute;
-    top:0%;; left:10%;
-    z-index:-1;
-    width:200%;
+main>.content>ul>li>.preview >a>.back {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    z-index: -1;
+    width: 200%;
     height: 100%;
-    background-color:#aba0d8;
+    background-color: #aba0d8;
 }
 
 
-.content > .swiper-button-next{
-    position:fixed;
-    top:83%; right:55%;
-    width:50px; 
-    height:1em;
-    z-index:100;
-    text-align:center;
-    color:black;
-    transition:0.5s;
-    padding-bottom:10px;
 
-}
-.content > .swiper-button-prev{
-    position:fixed;
-    top:83%; right:50%;
-    width:50px; 
-    height:1em;
-    z-index:100;
-    text-align:center;
-    color:black;
-    transition:0.5s;
-    padding-bottom:10px;
+
+.content>.swiper-button-next {
+    position: fixed;
+    top: 80%;
+    right: 52%;
+    width: 50px;
+    z-index: 100;
+    text-align: center;
+    font-size:1.2em;
+    color: black;
+    transition: 0.5s;
+    padding-bottom: 10px;
 
 }
 
-.content > .swiper-button-next:hover{
+.content>.swiper-button-prev {
+    position: fixed;
+    top: 80%;
+    right: 55%;
+    width: 50px;
+    z-index: 100;
+    text-align: center;
+    font-size:1.2em;
+    color: black;
+    transition: 0.5s;
+    padding-bottom: 10px;
+
+}
+
+.content>.swiper-button-next:hover {
     background-color: rgba(255, 236, 136, 0.6);
-    color:#8563E7;
+    color: #8563E7;
 
 }
-.content > .swiper-button-prev:hover{
+
+.content>.swiper-button-prev:hover {
     background-color: rgba(255, 236, 136, 0.6);
-    color:#8563E7;
+    color: #8563E7;
+}
+
+main > a {
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: inline-block;
+    position: fixed;
+    bottom: 10%;
+    right: 8%;
+    z-index: 300;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+main > a:hover {
+    color: white;
+    background-color: #3d2486;
+    opacity: 70%;
 }

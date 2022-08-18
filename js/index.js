@@ -21,7 +21,7 @@ var swiper = new Swiper('.window', {
 
 
 //scroll event 발생 -> 페이지 이동
-const link = document.querySelector('.mouse');
+const link = document.querySelector('.web_footer');
 
 
 window.addEventListener('scroll', function(){

@@ -53,7 +53,7 @@ body>.pop {
 }
 
 body>.pop>.ans {
-    padding: 15px 20px 30px;
+    padding: 15px 20px 10px;
     background-color: #FFEC88;
     border-radius: 30px;
     font-size: 12px;
@@ -92,7 +92,7 @@ body header .header {
 body header .header>a {
     width: 60%;
     margin: 50px auto;
-    animation: rot 2s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
+    animation: rot 4s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
 }
 
 @keyframes rot {

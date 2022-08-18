@@ -1,0 +1,118 @@
+/* .tool {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+} */
+
+.wrap, .wrap-2 {
+  margin: 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30%;
+  height: 21%;
+  margin-bottom:10px;
+}
+
+.wrap:hover p, .wrap-2:hover p {
+  opacity: 1;
+}
+.wrap .span, .wrap-2 .span {
+  visibility:hidden;
+  cursor: pointer;
+  border: 1.5px solid coral;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  opacity: 0.6;
+  border-radius: 100%;
+  transition: all;
+}
+
+.wrap.active .span{
+  visibility:visible;
+}
+
+.wrap .symbol {
+  color: black;
+  font-size: 1em;
+  z-index: 1;
+  transition: all 1000ms;
+  user-select: none;
+  cursor: pointer;
+}
+.wrap.active .symbol.go-heart {
+  transition: all 1s;
+  animation: go-heart 1s forwards linear;
+}
+.wrap .span {
+  cursor: pointer;
+  border: 1.5px solid white;
+  position: absolute;
+  background: #FFE3E3;
+  opacity: 0.8;
+  border-radius: 100%;
+  transition: all;
+}
+.wrap.active .span-1 {
+  transition: all 1200ms;
+}
+.wrap.active .span-1.go {
+  border-radius: 40% 42% 45% 55%;
+  animation: gogo 5200ms infinite linear;
+}
+.wrap.active .span-2 {
+  transition: all 1200ms;
+}
+.wrap.active .span-2.go {
+  border-radius: 55% 41% 65% 43%;
+  animation: gogo-2 5500ms infinite linear;
+}
+.wrap.active .span-3 {
+  transition: all 1200ms;
+}
+.wrap.active .span-3.go {
+  border-radius: 52% 72% 45% 61%;
+  animation: gogo 3400ms infinite linear;
+}
+.wrap.active .span-4 {
+  transition: all 1200ms;
+}
+.wrap.active .span-4.go {
+  border-radius: 58% 56% 72% 58%;
+  animation: gogo-2 6000ms infinite linear;
+}
+
+.go {
+  transition: all 1s;
+}
+
+@keyframes gogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes gogo-2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-720deg);
+  }
+}
+@keyframes go-heart {
+  from {
+    transform: scale(1.2) rotate(0deg);
+  }
+  to {
+    transform: scale(1.2) rotate(360deg);
+  }
+}

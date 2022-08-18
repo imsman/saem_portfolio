@@ -167,7 +167,7 @@ html body main > .text > p.top {
 html body main > .text > p.ex {
   margin-top: 40px;
   font-size: 1.2em;
-  line-height: 1.4;
+  line-height: 1.2;
   color: white;
   white-space: pre-line;
 }

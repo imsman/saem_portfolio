@@ -18,16 +18,25 @@ $.ajax({
                     ${v.dif}
                     </p>
                 </div>
+                <div class="more">    
+                        <a href="${v.link}" target="_blank">더보기</a>
+                        <a href="${v.ppt}" target="_blank">기획안보기</a>
+                </div>
             
                 <div class="preview">
-                    <div class="bg">
-                        <img src="${v.img}" alt="preview">
-                    </div>
-                    <div class="back"></div>
+                    <a href="${v.link}" target="_blank">
+                        <div class="bg">
+                            <img src="${v.img}" alt="preview">
+                        </div>
+                        <div class="back"></div>
+                    </a>
+                    
                 </div>
             </li>`;
+
         });
 
+        // console.log($('.more a').val()); 비어있음 백그라운드 색회색으로 할까?+
 
         $('.content > ul').html(site);
 
@@ -41,6 +50,7 @@ $.ajax({
             },
             loop:true,
             draggable:true,
+            mousewheel: true,
             autoplay: {
                 delay: 4000,
                 pauseOnMouseEnter:true,
