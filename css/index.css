@@ -98,7 +98,7 @@ main .web_main .illust {
 }
 
 main .web_main .illust img {
-  width:80%;
+  width:90%;
 }
 
 main .web_footer {
@@ -188,7 +188,7 @@ main .web_footer svg:nth-of-type(4) {
   height:90vh;
   position: absolute;
   left: 0;
-  bottom:-10%;
+  bottom:-15%;
   z-index: 1;
 }
 
