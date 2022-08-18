@@ -14,6 +14,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -89,25 +96,11 @@ body header .header>a {
 }
 
 @keyframes rot {
-    0% {
-        transform: rotate(0deg)
-    };
-
-    25% {
-        transform: rotate(90deg)
-    };
-
-    50% {
-        transform: rotate(180deg)
-    };
-
-    75% {
-        transform: rotate(270deg)
-    };
-
-    100% {
-        transform: rotate(360deg)
-    };
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
 }
 
 body header .header>a>img {
