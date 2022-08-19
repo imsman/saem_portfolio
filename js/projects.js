@@ -19,7 +19,7 @@ $.ajax({
                     </p>
                 </div>
                 <div class="more">    
-                        <a href="${v.link}" target="_blank">더보기</a>
+                        <a href="${v.link}" target="_blank">바로가기</a>
                         <a href="${v.ppt}" target="_blank">기획안보기</a>
                 </div>
             

@@ -32,4 +32,6 @@ window.addEventListener('scroll', function(){
 
 link.addEventListener('click',function(){
     window.location.href = './profile.html';
+
+    localStorage.setItem('page',0);
 });

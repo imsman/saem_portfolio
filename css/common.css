@@ -27,6 +27,7 @@
     list-style-type: none;
     box-sizing: border-box;
     text-decoration: none;
+    font:'OTWelcomeRA';
 }
 
 .title {
@@ -136,16 +137,26 @@ body header .header .indi>ul>li {
 }
 
 body header .header .indi>ul>li>a {
+    /* border:1px solid white; */
     width: 100%;
 }
 
 body header .header .indi>ul>li>a>svg {
+    /* border:1px solid white; */
     width: 100%;
     margin-bottom: 30px;
 }
 
-body header .header .indi>ul>li>a>svg.active {
-    stroke: black;
+.indi>ul>li>a>svg::after{
+    /* display:inline; */
+    border-right:5px solid white;
+    margin-left:5px;
+    display:none;
+    transition: 0.5s;
+}
+
+body header .header .indi > ul > li.here > a > svg::after {
+    display:inline;
 }
 
 body header .header>.question {
