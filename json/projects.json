@@ -1,8 +1,31 @@
 {
     "projects": [
         {
-            "name": "MINIDECO",
+            "name": "생활쏙법",
             "num": "01",
+            "sub":"법률 서비스 모바일 웹[팀프로젝트]",
+            "percentage":"50%",
+            "img": "./img/projects/law_life.png",
+            "bad":"공공 데이터 포털의 OPEN API를 활용하여 팀 프로젝트를 진행했습니다. 사회 대부분의 사람들이 일상에서 마주칠 노동법, 부동산 임대차법을 중심으로 법률 서비스를 제공합니다.",
+            "dif":"공개된 API를 활용할 수 있는 데이터로 변환해 추출하고, 팀원들과의 협업을 위해 Git hub에 대한 이해도도 높일 수 있는 값진 경험이었습니다.",
+            "link":"https://psh9112.github.io/Team-project/",
+            "ppt":"https://docs.google.com/presentation/d/1HqqdN_RT907lNW2xpOppJZv_gi6iaZqWGNNdQvmvZrs/edit?usp=sharing"
+            
+        },
+        {
+            "name": "Barobill_clone",
+            "num": "02",
+            "sub":"바로빌 개발자센터 클론코딩",
+            "percentage":"100%",
+            "img": "./img/projects/barobill_preview.png",
+            "bad":"클론 코딩을 통해 기존 모바일 반응형 홈페이지가 어떻게 디자인되고, 구현되는지 알아 볼 수 있는 프로젝트였습니다.",
+            "dif":"기존 바로빌 개발자 서비스센터 모바일 반응형 페이지를 클론 코딩하여 팝업창 구현, 스크롤 이벤트 등 기업에서 유용하게 쓰는 기술들에 능숙해 질 수 있었습니다.",
+            "link":"https://an-saemi.github.io/barobill-clonecoding/",
+            "ppt":"https://docs.google.com/presentation/d/17a_Rj8eT3OQRB1h4GITSLr2jhmB0DQ_lEH1Z54sycbY/edit?usp=sharing"
+        },
+        {
+            "name": "MINIDECO",
+            "num": "03",
             "sub":"미니어처 가구 쇼핑몰 리뉴얼",
             "percentage":"100%",
             "img": "./img/projects/preiew_img_minideco.png",
@@ -13,7 +36,7 @@
         },
         {
             "name": "TGIF",
-            "num": "02",
+            "num": "04",
             "sub":"TGIF 레스토랑 홈페이지 리뉴얼",
             "percentage":"100%",
             "img": "./img/projects/preiew_img_tgif.png",
@@ -21,29 +44,6 @@
             "dif":"동종업계 다른 레스토랑의 홈페이지를 참고하고, 분석하여 기존 홈페이지의 장점인 사이트맵을 제외한 전체적인 홈페이지 분위기, 배너 디자인, 메뉴 소개 페이지를 새로 제작했습니다. 특히 json 데이터파일을 직접 만들어 ajax를 실행해본 첫 프로젝트 입니다.",
             "link":"https://an-saemi.github.io/projects-TGIF/ ",
             "ppt":""
-        },
-        {
-            "name": "Barobill_clone",
-            "num": "03",
-            "sub":"바로빌 개발자센터 클론코딩",
-            "percentage":"100%",
-            "img": "./img/projects/barobill_preview.png",
-            "bad":"클론 코딩을 통해 기존 모바일 반응형 홈페이지가 어떻게 디자인되고, 구현되는지 알아 볼 수 있는 프로젝트였습니다.",
-            "dif":"기존 바로빌 개발자 서비스센터 모바일 반응형 페이지를 클론 코딩하여 팝업창 구현, 스크롤 이벤트 등 기업에서 유용하게 쓰는 기술들에 능숙해 질 수 있었습니다.",
-            "link":"https://an-saemi.github.io/barobill-clonecoding/",
-            "ppt":"https://docs.google.com/presentation/d/17a_Rj8eT3OQRB1h4GITSLr2jhmB0DQ_lEH1Z54sycbY/edit?usp=sharing"
-        },
-        {
-            "name": "생활 쏙 법",
-            "num": "04",
-            "sub":"법률 서비스 모바일 웹",
-            "percentage":"50%",
-            "img": "./img/projects/law_life.png",
-            "bad":"공공 데이터 포털의 OPEN API를 활용하여 팀 프로젝트를 진행했습니다. 사회 대부분의 사람들이 일상에서 마주칠 노동법, 부동산 임대차법을 중심으로 법률 서비스를 제공합니다.",
-            "dif":"공개된 API를 활용할 수 있는 데이터로 변환해 추출하고, 팀원들과의 협업을 위해 Git hub에 대한 이해도도 높일 수 있는 값진 경험이었습니다.",
-            "link":"https://psh9112.github.io/Team-project/",
-            "ppt":"https://docs.google.com/presentation/d/1HqqdN_RT907lNW2xpOppJZv_gi6iaZqWGNNdQvmvZrs/edit?usp=sharing"
         }
-
     ]
 }

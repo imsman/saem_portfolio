@@ -10,25 +10,22 @@ $.ajax({
             <li class="swiper-slide">
                 <div class="site">
                     <p class="num">${v.num}</p>
-                    <b>${v.name}</b>
+                    <b>${v.name}</b> <p class="per">[기여도:${v.percentage}]</p>
                     <p class="sub">${v.sub}</p>
                     <p class="ex">
                     ${v.bad}
                     <br>
                     ${v.dif}
                     </p>
-                </div>
-                <div class="more">    
+                    <div class="more">    
                         <a href="${v.link}" target="_blank">바로가기</a>
                         <a href="${v.ppt}" target="_blank">기획안보기</a>
+                    </div>
                 </div>
-            
                 <div class="preview">
                     <a href="${v.link}" target="_blank">
-                        <div class="bg">
-                            <img src="${v.img}" alt="preview">
-                        </div>
-                        <div class="back"></div>
+                        <img src="${v.img}" alt="preview">
+                        <div class="bg"></div>
                     </a>
                     
                 </div>
@@ -48,12 +45,12 @@ $.ajax({
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            loop:true,
-            draggable:true,
+            loop: true,
+            draggable: true,
             mousewheel: true,
             autoplay: {
                 delay: 4000,
-                pauseOnMouseEnter:true,
+                pauseOnMouseEnter: true,
             },
             // effect: 'fade',
             // fadeEffect: {

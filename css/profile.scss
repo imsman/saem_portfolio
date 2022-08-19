@@ -1,208 +1,32 @@
 @import url('./common.css');
 
 @keyframes rot {
-    0% {transform: rotate(0deg)};
-    25% {transform: rotate(90deg)};
-    50% {transform: rotate(180deg)};
-    75% {transform: rotate(270deg)};
-    100% {transform: rotate(360deg)};
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
 }
 
 @keyframes appear {
-    0% {
-        opacity: 0;
-        transform: translateX(100px)
-    };
-    100% {
-        opacity: 100%;
-        transform: translateX(0px)
-    };
+    0% {opacity: 0;
+        transform: translateX(100px)}
+    100% {opacity: 100%;
+        transform: translateX(0px)}
 }
 
 @keyframes up {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    };
-    100% {
-        opacity: 100%;
-        transform: translateY(0);
-    };
+    0% {opacity: 0;
+        transform: translateY(50px);}
+    100% {opacity: 100%;
+        transform: translateY(0);}
 }
 
 
 body {
     position: relative;
 
-    >.pop {
-        position: fixed;
-        top: 770px;
-        left: 45px;
-        z-index: 105;
-        display: none;
-
-        // >span:nth-of-type(1) {
-        //     width: 10px;
-        //     height: 10px;
-        //     background-color: #FFEC88;
-        //     border-radius: 100px;
-        // }
-
-        // >span:nth-of-type(2) {
-        //     width: 15px;
-        //     height: 15px;
-        //     background-color: #FFEC88;
-        //     border-radius: 100px;
-        // }
-
-        >.ans {
-            padding: 15px 20px 10px;
-            background-color: #FFEC88;
-            border-radius: 30px;
-            font-size: 12px;
-            line-height: 1.2;
-            width: 350px;
-            height: 70px;
-        }
-
-        &.active {
-            display: block;
-        }
-    }
-
-    header {
-        .header {
-            width: 140px;
-            height: 100vh;
-            position: fixed;
-            left: 0%;
-            top: 0%;
-            z-index: 100;
-            background-color: #8563E7;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            vertical-align: middle;
-            transition: 0.5s;
-
-            >a {
-                width: 60%;
-                margin: 50px auto;
-                animation: rot 2s infinite cubic-bezier(.51, .57, .79, .75);
-
-                >img {
-                    width: 100%;
-                }
-
-                &:hover {
-                    animation-play-state: paused;
-                }
-            }
-
-            .indi {
-                width: 60%;
-                margin: 50px auto;
-                padding-bottom: 30px;
-
-                >ul {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-
-                    >li {
-                        width: 100%;
-
-                        >a {
-                            width: 100%;
-
-                            >svg {
-                                width: 100%;
-                                margin-bottom: 30px;
-
-                                &.active {
-                                    stroke: black;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            >.question {
-                width: 50px;
-                margin: 50px auto;
-                height: 50px;
-                background-color: #FFEC88;
-                border-radius: 50px;
-                text-align: center;
-                vertical-align: middle;
-                padding-top: 5.5%;
-
-                >p {
-                    padding-top: 10px;
-                    font-size: 1.2em;
-                }
-            }
-        }
-    }
-
     >main {
-        margin-left: 140px;
-
-        >.top {
-            width: 100%;
-            height: 80px;
-            display: flex;
-            justify-content: space-between;
-            vertical-align: center;
-            align-items: center;
-            border-bottom: 2px solid #E8E5FF;
-
-            >.resume {
-                margin-left: 20px;
-                display: flex;
-                justify-content: space-around;
-                vertical-align: center;
-                align-items: center;
-
-                >svg {
-                    width: 8%;
-                }
-
-                >p {
-                    width: 90%;
-                    text-align: right;
-                    font-size: 1em;
-                    color: #979797;
-                    padding-top:2px;
-                }
-            }
-
-            >.me {
-                width: 10%;
-                margin-right: 60px;
-                display: flex;
-                justify-content: space-around;
-                vertical-align: center;
-                align-items: center;
-
-                >p {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: flex-end;
-                    vertical-align: center;
-                    margin-right: 30px;
-                    >span{
-                        font-size: 15px;
-                    }
-                }
-
-                >img {
-                    width: 30%;
-                }
-            }
-        }
 
         >.introduce {
             width: 100%;
@@ -226,7 +50,7 @@ body {
                     align-items: center;
                     vertical-align: center;
                     position: sticky;
-                    top:40px;
+                    top: 40px;
 
                     >h2 {
                         margin: 70px 0;
@@ -254,9 +78,12 @@ body {
 
                                 >p {
                                     padding: 5px;
-                                    font-size:1.2em;
-                                    text-align:center;
+                                    font-size: 1.2em;
+                                    text-align: center;
                                 }
+                            }
+                            >li:last-child{
+                                padding-top:3em;
                             }
                         }
 
@@ -268,11 +95,19 @@ body {
 
                                 >p {
                                     padding: 5px;
-                                    font-size:1.2em;
+                                    font-size: 1.2em;
                                 }
-                                >p:last-child{
+                            }
+                            >li:nth-of-type(4){
+                                >p{
                                     white-space: pre-line;
-                                    line-height:1.2;
+                                    line-height: 1.3;
+                                }
+                            }
+                            >li:nth-of-type(5){
+                                >p{
+                                    white-space: pre-line;
+                                    line-height: 1.3;
                                 }
                             }
                         }
@@ -332,7 +167,7 @@ body {
                         >img.icon {
                             width: 12%;
                             position: absolute;
-                            left:28%;
+                            left: 28%;
                             top: -5%;
                             z-index: 104;
 
@@ -349,13 +184,13 @@ body {
 
                         >.text {
                             width: 80%;
-                            height:180px;
+                            height: 180px;
                             position: absolute;
                             left: 10%;
                             top: 12%;
                             z-index: 104;
-                            display:flex;
-                            flex-direction:column;
+                            display: flex;
+                            flex-direction: column;
                             justify-content: space-evenly;
 
                             >b {
@@ -364,9 +199,9 @@ body {
                             }
 
                             >p {
-                                padding-top: 16px;
+                                padding-top: 10px;
                                 font-size: 1em;
-                                line-height: 1.2;
+                                line-height: 1.3;
 
                             }
                         }
@@ -383,6 +218,17 @@ body {
                             z-index: 102;
                             display: none;
                             opacity: 0;
+
+                            >p{
+                                width:50%;
+                                line-height:1.2;
+                                word-wrap:break-word;
+                                margin:100px auto;
+                                margin-left:43%;
+                                font-size:1.2em;
+                                color:black;
+
+                            }
 
                             &.active {
                                 animation: up 0.3s forwards ease-in-out;

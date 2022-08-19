@@ -37,7 +37,7 @@ $.ajax({
                 p.per = one;
                 p.ang = (Math.PI * 2) * (one - 25) / 100;
 
-                ctx.clearRect(0,0,size.w,size.h)
+                ctx.clearRect(0,0,size.w,size.h);
                 ctx.beginPath();
                 ctx.lineCap = 'round';
                 ctx.lineWidth = 20;

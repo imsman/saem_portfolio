@@ -1,25 +1,26 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'EarlyFontDiary';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-WhiteA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'OTWelcomeRA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-family: 'GangwonEdu_OTFLightA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'GangwonEdu_OTFBoldA';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 * {
     margin: 0;
@@ -27,45 +28,35 @@
     list-style-type: none;
     box-sizing: border-box;
     text-decoration: none;
-    font:'OTWelcomeRA';
+    font:'Pretendard-Regular';
+}
+
+html,body{
+    margin:0;
+    padding:0;
+}
+
+
+img{
+    vertical-align: middle;
 }
 
 .title {
-    font-family: 'GangwonEduAll';
+    font-family: 'GangwonEdu_OTFLightA';
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
 }
 
 p {
-    font-family: 'OTWelcomeRA';
+    font-family: 'Pretendard-Regular';
 }
 
 body {
     position: relative;
 }
 
-body>.pop {
-    position: fixed;
-    top: 770px;
-    left: 45px;
-    z-index: 105;
-    display: none;
-}
 
-body>.pop>.ans {
-    padding: 15px 20px 10px;
-    background-color: #FFEC88;
-    border-radius: 30px;
-    font-size: 12px;
-    line-height: 1.2;
-    width: 350px;
-    height: 70px;
-}
-
-body>.pop.active {
-    display: block;
-}
 
 body header .header {
     width: 140px;
@@ -167,19 +158,44 @@ body header .header>.question {
     border-radius: 50px;
     text-align: center;
     vertical-align: middle;
-    padding-top: 5.5%;
+    /* padding-top: 5%; */
 }
 
 body header .header>.question>p {
-    padding-top: 10px;
+    padding: 10px 0;
     font-size: 1.2em;
 }
+
+.pop {
+    position: fixed;
+    top: 100%;
+    left: 45px;
+    z-index: 105;
+    /* display: none; */
+}
+
+.pop>.ans {
+    width:400px;
+    height:100px;
+    display:inline-block;
+    padding: 15px 20px 20px;
+    background-color: #FFEC88;
+    border-radius: 30px;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.pop.active {
+    display: block;
+}
+
 
 body>main {
     margin-left: 140px;
 }
 
 body>main>.top {
+    font-weight:bold;
     width: 100%;
     height: 80px;
     display: -webkit-box;
@@ -193,6 +209,7 @@ body>main>.top {
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 2px solid #E8E5FF;
+    background-color: white;
 }
 
 body>main>.top>.resume {
