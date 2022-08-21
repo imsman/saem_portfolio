@@ -84,7 +84,7 @@ body header .header {
 body header .header>a {
     width: 60%;
     margin: 50px auto;
-    animation: rot 4s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
+    /* animation: rot 4s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75); */
 }
 
 @keyframes rot {
@@ -238,7 +238,7 @@ body>main>.top>.resume>p {
 }
 
 body>main>.top>.me {
-    width: 10%;
+    width: 20%;
     margin-right: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -266,7 +266,7 @@ body>main>.top>.me>p {
     -ms-flex-align: end;
     align-items: flex-end;
     vertical-align: center;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 body>main>.top>.me>p>span {
@@ -274,5 +274,5 @@ body>main>.top>.me>p>span {
 }
 
 body>main>.top>.me>img {
-    width: 30%;
+    width:18%;
 }

@@ -1,249 +1,182 @@
 @import url("./common.css");
 @-webkit-keyframes rot {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   25% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
   50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
   }
   75% {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    transform: rotate(270deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes rot {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   25% {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
   50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
   }
   75% {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    transform: rotate(270deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 @-webkit-keyframes appear {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    transform: translateX(100px);
   }
   100% {
     opacity: 100%;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
-
 @keyframes appear {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    transform: translateX(100px);
   }
   100% {
     opacity: 100%;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
-
 @-webkit-keyframes up {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    transform: translateY(50px);
   }
   100% {
     opacity: 100%;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
-
 @keyframes up {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    transform: translateY(50px);
   }
   100% {
     opacity: 100%;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
-
 body {
   position: relative;
 }
-
 body > main > .introduce {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 body > main > .introduce > .left {
   width: 30%;
   height: 1730px;
   background-color: #E8E5FF;
 }
-
 body > main > .introduce > .left > .left_bg {
   width: 100%;
   height: 600px;
   padding-bottom: 50px;
   background-color: #E8E5FF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   vertical-align: center;
   position: -webkit-sticky;
   position: sticky;
   top: 40px;
 }
-
 body > main > .introduce > .left > .left_bg > h2 {
   margin: 70px 0;
 }
-
 body > main > .introduce > .left > .left_bg > img {
   width: 40%;
   margin: 10px auto;
 }
-
 body > main > .introduce > .left > .left_bg > .profile {
   width: 65%;
   margin: 30px auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   text-align: left;
   font-size: 0.9em;
 }
-
 body > main > .introduce > .left > .left_bg > .profile > ul.q {
   padding-left: 40px;
   width: 39%;
 }
-
 body > main > .introduce > .left > .left_bg > .profile > ul.q > li {
   margin: 5px;
 }
-
 body > main > .introduce > .left > .left_bg > .profile > ul.q > li > p {
   padding: 5px;
   font-size: 1.2em;
   text-align: center;
 }
-
 body > main > .introduce > .left > .left_bg > .profile > ul.q > li:last-child {
   padding-top: 3em;
 }
-
 body > main > .introduce > .left > .left_bg > .profile > ul.a {
   width: 61%;
 }
-
 body > main > .introduce > .left > .left_bg > .profile > ul.a > li {
   margin: 5px;
 }
-
 body > main > .introduce > .left > .left_bg > .profile > ul.a > li > p {
   padding: 5px;
   font-size: 1.2em;
 }
-
 body > main > .introduce > .left > .left_bg > .profile > ul.a > li:nth-of-type(4) > p {
   white-space: pre-line;
   line-height: 1.3;
 }
-
 body > main > .introduce > .left > .left_bg > .profile > ul.a > li:nth-of-type(5) > p {
   white-space: pre-line;
   line-height: 1.3;
 }
-
 body > main > .introduce > .right {
   margin: 80px auto;
   width: 70%;
   text-align: center;
 }
-
 body > main > .introduce > .right > .tit {
   width: 35%;
   margin: 0px 0px 50px;
   margin-left: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   vertical-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 body > main > .introduce > .right > .tit > .title {
   text-align: right;
   width: 80%;
   margin: 10px auto;
   font-size: 25px;
 }
-
 body > main > .introduce > .right > .tit > svg {
   padding-top: 5px;
   width: 20%;
 }
-
 body > main > .introduce > .right > .ex {
   width: 70%;
   margin: 0 auto;
   text-align: left;
 }
-
 body > main > .introduce > .right > .ex > div {
   width: 50%;
   height: 250px;
@@ -253,10 +186,8 @@ body > main > .introduce > .right > .ex > div {
   opacity: 0;
   -webkit-animation: appear 0.5s forwards ease-in-out;
           animation: appear 0.5s forwards ease-in-out;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 body > main > .introduce > .right > .ex > div > img.icon {
   width: 12%;
   position: absolute;
@@ -264,7 +195,6 @@ body > main > .introduce > .right > .ex > div > img.icon {
   top: -5%;
   z-index: 104;
 }
-
 body > main > .introduce > .right > .ex > div > img.box {
   width: 70%;
   position: absolute;
@@ -272,7 +202,6 @@ body > main > .introduce > .right > .ex > div > img.box {
   top: 5%;
   z-index: 103;
 }
-
 body > main > .introduce > .right > .ex > div > .text {
   width: 80%;
   height: 180px;
@@ -280,29 +209,19 @@ body > main > .introduce > .right > .ex > div > .text {
   left: 10%;
   top: 12%;
   z-index: 104;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-
 body > main > .introduce > .right > .ex > div > .text > b {
   font-size: 1.3em;
   font-weight: bold;
 }
-
 body > main > .introduce > .right > .ex > div > .text > p {
   padding-top: 10px;
   font-size: 1em;
   line-height: 1.3;
 }
-
 body > main > .introduce > .right > .ex > div > .hover {
   position: absolute;
   left: 16%;
@@ -315,7 +234,6 @@ body > main > .introduce > .right > .ex > div > .hover {
   display: none;
   opacity: 0;
 }
-
 body > main > .introduce > .right > .ex > div > .hover > p {
   width: 50%;
   line-height: 1.2;
@@ -325,49 +243,40 @@ body > main > .introduce > .right > .ex > div > .hover > p {
   font-size: 1.2em;
   color: black;
 }
-
 body > main > .introduce > .right > .ex > div > .hover.active {
   -webkit-animation: up 0.3s forwards ease-in-out;
           animation: up 0.3s forwards ease-in-out;
   display: inline-block;
   opacity: 100%;
 }
-
 body > main > .introduce > .right > .ex > div.one > img.icon {
   width: 10%;
   padding-right: 3px;
 }
-
 body > main > .introduce > .right > .ex > div.two {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
-
 body > main > .introduce > .right > .ex > div.two > img.icon {
   width: 10%;
   padding-right: 4px;
 }
-
 body > main > .introduce > .right > .ex > div.three {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-
 body > main > .introduce > .right > .ex > div.three > img.icon {
   width: 11%;
   margin-right: 5px;
 }
-
 body > main > .introduce > .right > .ex > div.four {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
 }
-
 body > main > .introduce > .right > .ex > div.four > img.icon {
   width: 10%;
   margin-right: 5px;
 }
-
 body > main > .introduce > a {
   width: 100px;
   text-align: center;
@@ -380,13 +289,10 @@ body > main > .introduce > a {
   bottom: 10%;
   right: 8%;
   z-index: 300;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 body > main > .introduce > a:hover {
   color: white;
   background-color: #3d2486;
   opacity: 70%;
-}
-/*# sourceMappingURL=profile.css.map */
+}/*# sourceMappingURL=profile.css.map */
