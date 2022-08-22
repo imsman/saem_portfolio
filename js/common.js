@@ -5,7 +5,7 @@ mark.addEventListener('click', function () {
     copy.classList.toggle('active');
 })
 
-const indi = document.querySelectorAll('.indi>ul>li');
+// const indi = document.querySelectorAll('.indi>ul>li');
 
 // const svg = document.getElementsByTagName('.indi > ul >li svg');
 
