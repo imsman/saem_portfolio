@@ -1,54 +1,25 @@
 @import url('./common.css');
 
 @keyframes rot {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    25% {
-        transform: rotate(90deg)
-    }
-
-    50% {
-        transform: rotate(180deg)
-    }
-
-    75% {
-        transform: rotate(270deg)
-    }
-
-    100% {
-        transform: rotate(360deg)
-    }
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: rotate(360deg)}
 }
 
 @keyframes appear {
-    0% {
-        opacity: 0;
-        transform: translateX(100px)
-    }
-
-    100% {
-        opacity: 100%;
-        transform: translateX(0px)
-    }
+    0% {opacity: 0;
+        transform: translateX(100px)}
+    100% {opacity: 100%;
+        transform: translateX(0px)}
 }
 
 @keyframes up {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    100% {
-        opacity: 100%;
-        transform: translateY(0);
-    }
-}
-
-@keyframes right{
-    0%{transform:translateX(-100%);}
-    100%{transform:translateX(0);}
+    0% {opacity: 0;
+        transform: translateY(50px);}
+    100% {opacity: 100%;
+        transform: translateY(0);}
 }
 
 
@@ -64,14 +35,15 @@ body {
 
             >.left {
                 width: 30%;
+                height: 1730px;
                 background-color: #E8E5FF;
 
 
                 >.left_bg {
                     width: 100%;
-                    height: fit-content;
-                    // padding-bottom: 50px;
-                    // background-color: #E8E5FF;
+                    // height: 600px;
+                    padding-bottom: 50px;
+                    background-color: #E8E5FF;
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
@@ -81,12 +53,12 @@ body {
                     top: 40px;
 
                     >h2 {
-                        padding: 70px 0 50px;
+                        margin: 70px 0;
                     }
 
                     >img {
                         width: 40%;
-                        margin: 0 auto 10px;
+                        margin: 10px auto;
                     }
 
                     >.profile {
@@ -110,9 +82,8 @@ body {
                                     text-align: center;
                                 }
                             }
-
-                            >li:last-child {
-                                padding-top: 3em;
+                            >li:last-child{
+                                padding-top:3em;
                             }
                         }
 
@@ -127,43 +98,38 @@ body {
                                     font-size: 1.2em;
                                 }
                             }
-
-                            >li:nth-of-type(4) {
-                                >p {
+                            >li:nth-of-type(4){
+                                >p{
                                     white-space: pre-line;
                                     line-height: 1.3;
                                 }
                             }
-
-                            >li:nth-of-type(5) {
-                                >p {
+                            >li:nth-of-type(5){
+                                >p{
                                     white-space: pre-line;
                                     line-height: 1.3;
                                 }
                             }
                         }
                     }
-
-                    >.marq {
-                        overflow: hidden;
-                        width: 50%;
-                        margin: 10px auto 30px;
-                        height: 150px;
-
-                        >p {
-                            text-align: left;
-                            display:inline-block;
-                            width: 100%;
-                            height: 100%;
-                            margin: 10px auto 30px;
-                            white-space: pre-line;
-                            font-size: 40px;
-                            font-weight: 500;
-                            color: rgba(0, 0, 0, 0.3);
-                            animation: right 0.8s forwards ease-in-out;
-                        }
+                    >.back_text{
+                        width:80%;
+                        height:150px;
+                        margin:40px auto 0;
+                        background-color: transparent;
+                        background-size:100%;
+                        background-repeat: no-repeat;
+                        color:rgba(0,0,0,0.2);
+                        font-size:2.8em;
+                        white-space: pre-line;
+                        font-family:'Pretendard-Regular';
+                        font-weight:600;
+                        letter-spacing: -1px;
+                        text-align:center;
                     }
                 }
+
+
             }
 
             >.right {
@@ -268,14 +234,14 @@ body {
                             display: none;
                             opacity: 0;
 
-                            >p {
-                                width: 50%;
-                                line-height: 1.2;
-                                word-wrap: break-word;
-                                margin: 100px auto;
-                                margin-left: 43%;
-                                font-size: 1.2em;
-                                color: black;
+                            >p{
+                                width:50%;
+                                line-height:1.2;
+                                word-wrap:break-word;
+                                margin:100px auto;
+                                margin-left:43%;
+                                font-size:1.2em;
+                                color:black;
 
                             }
 

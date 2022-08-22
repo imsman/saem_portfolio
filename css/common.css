@@ -56,33 +56,35 @@ body {
     position: relative;
 }
 
-
-
-body header .header {
-    width: 140px;
-    height: 100vh;
+header{
+    width:140px;
+    height:100vh;
     position: fixed;
-    left: 0%;
-    top: 0%;
+    left: 0%; top: 0%;
     z-index: 100;
     background-color: #8563E7;
-    display: -webkit-box;
-    display: -ms-flexbox;
+}
+
+body header .load {
+    width: 100%;
+    height: 100%;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+    /* -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; */
+    /* -ms-flex-direction: column; */
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    /* -webkit-box-pack: justify;
+    -ms-flex-pack: justify; */
     justify-content: space-between;
-    vertical-align: middle;
-    -webkit-transition: 0.5s;
+    /* -webkit-transition: 0.5s; */
     transition: 0.5s;
 }
 
-body header .header>a {
+body header .load>a {
     width: 60%;
+    /* height:5%; */
     margin: 50px auto;
     animation: rot 4s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
 }
@@ -95,22 +97,22 @@ body header .header>a {
     100% {transform: rotate(360deg)}
 }
 
-body header .header>a>img {
+body header .load>a>img {
     width: 100%;
 }
 
-body header .header>a:hover {
+body header .load>a:hover {
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
 }
 
-body header .header .indi {
+body header .load .indi {
     width: 60%;
-    margin: 50px auto;
-    padding-bottom: 30px;
+    height:70%;
+    margin: 10px auto;
 }
 
-body header .header .indi>ul {
+body header .load .indi>ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -123,46 +125,48 @@ body header .header .indi>ul {
     justify-content: center;
 }
 
-body header .header .indi>ul>li {
-    width: 100%;
-}
-
-body header .header .indi>ul>li>a {
-    /* border:1px solid white; */
-    width: 100%;
-}
-
-body header .header .indi>ul>li>a>svg {
-    /* border:1px solid white; */
+body header .load .indi>ul>li {
     width: 100%;
     margin-bottom: 30px;
 }
 
-.indi>ul>li>a>svg::after{
-    /* display:inline; */
+body header .load .indi>ul>li>a {
+    /* border:1px solid white; */
+    width: 100%;
+}
+
+body header .load .indi>ul>li>a>svg {
+    /* border:1px solid white; */
+    width: 100%;
+    
+}
+
+/* .indi>ul>li>a>svg::after{
+    /* display:inline;
     border-right:5px solid white;
     margin-left:5px;
     display:none;
     transition: 0.5s;
 }
 
-body header .header .indi > ul > li.here > a > svg::after {
+body header .load .indi > ul > li.here > a > svg::after {
     display:inline;
-}
+} */
 
-body header .header>.question {
-    width: 50px;
-    margin: 50px auto;
-    height: 50px;
+body header .load>#question {
+    width: 60%;
+    height:10%;
+    margin: 20px auto;
+    /* height: 50px; */
+    background-color: #FFEC88;
+    border-radius: 50px;
     text-align: center;
-    vertical-align: middle;
-    align-items: center;
+    /* vertical-align: middle; */
+    /* position:relative; */
     /* padding-top: 5%; */
 }
 
-body header .header>.question>p {
-    background-color: #FFEC88;
-    border-radius: 50px;
+body header .load > #question {
     padding: 10px 0;
     font-size: 1.2em;
 }
@@ -171,26 +175,22 @@ body header .header>.question>p {
     position: fixed;
     top: 80%;
     left: 45px;
-    z-index: 300;
-    display: none;
-}
-
-.pop>.ans {
-    text-align:left;
-    /* vertical-align: center; */
-    width:400px;
-    height:100px;
-    padding: 15px 20px 8px;
+    z-index: 105;
+    white-space:pre-line;
+    padding: 15px 20px 20px;
     background-color: #FFEC88;
     border-radius: 30px;
     font-size: 1em;
     line-height: 1.2;
-    display:inline-block;
+    display:none;
 }
 
 .pop.active {
-    display:block;    
+    display: inline-block;
 }
+
+
+
 
 
 body>main {
@@ -213,8 +213,6 @@ body>main>.top {
     align-items: center;
     border-bottom: 2px solid #E8E5FF;
     background-color: white;
-    position:relative;
-    z-index:100;
 }
 
 body>main>.top>.resume {

@@ -33,7 +33,7 @@ $.ajax({
 
         });
 
-        // console.log($('.more a').val()); 비어있음 백그라운드 색회색으로 할까?+
+        // console.log($('.more a').val());
 
         $('.content > ul').html(site);
 
@@ -43,9 +43,16 @@ $.ajax({
             event.preventDefault();
             console.log($(this).attr('href'));
 
-            var ret = window.open(`${$(this).attr('href')}`,"_blank","width=680px,height=900px");
+            let ind = $(this).parent().index();
+            console.log(ind);
+
+            window.open(`${$(this).attr('href')}`,"_blank","width=680px,height=900px");
+            if($(this).eq(1)){
+                window.open(`${$(this).attr('href')}`,"_blank","width=380px,height=700px");
+            }
         })
-        //자 이제 여기서 각각 화면크기다르게하는것만 추가하면됨
+        //바로빌과 생활쏙법은 크기 달라야함
+
 
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,

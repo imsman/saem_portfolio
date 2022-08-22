@@ -10,12 +10,6 @@ html {
 main>.title {
     margin: 70px 0 40px;
     margin-left: 100px;
-    animation: slide 0.5s forwards ease-in-out;
-}
-
-@keyframes slide{
-    0%{transform:translateY(-200px);}
-    100%{transform:translateY(0px);}
 }
 
 main>.content {

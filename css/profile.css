@@ -96,28 +96,6 @@
   }
 }
 
-@-webkit-keyframes right {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes right {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
 body {
   position: relative;
 }
@@ -134,14 +112,14 @@ body > main > .introduce {
 
 body > main > .introduce > .left {
   width: 30%;
+  height: 1730px;
   background-color: #E8E5FF;
 }
 
 body > main > .introduce > .left > .left_bg {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  padding-bottom: 50px;
+  background-color: #E8E5FF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,12 +140,12 @@ body > main > .introduce > .left > .left_bg {
 }
 
 body > main > .introduce > .left > .left_bg > h2 {
-  padding: 70px 0 50px;
+  margin: 70px 0;
 }
 
 body > main > .introduce > .left > .left_bg > img {
   width: 40%;
-  margin: 0 auto 10px;
+  margin: 10px auto;
 }
 
 body > main > .introduce > .left > .left_bg > .profile {
@@ -225,25 +203,20 @@ body > main > .introduce > .left > .left_bg > .profile > ul.a > li:nth-of-type(5
   line-height: 1.3;
 }
 
-body > main > .introduce > .left > .left_bg > .marq {
-  overflow: hidden;
-  width: 50%;
-  margin: 10px auto 30px;
+body > main > .introduce > .left > .left_bg > .back_text {
+  width: 80%;
   height: 150px;
-}
-
-body > main > .introduce > .left > .left_bg > .marq > p {
-  text-align: left;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin: 10px auto 30px;
+  margin: 40px auto 0;
+  background-color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 2.8em;
   white-space: pre-line;
-  font-size: 40px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.3);
-  -webkit-animation: right 0.8s forwards ease-in-out;
-          animation: right 0.8s forwards ease-in-out;
+  font-family: 'Pretendard-Regular';
+  font-weight: 600;
+  letter-spacing: -1px;
+  text-align: center;
 }
 
 body > main > .introduce > .right {
