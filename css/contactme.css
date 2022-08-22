@@ -96,7 +96,6 @@ html body header .header > .question {
   width: 50px;
   margin: 50px auto;
   height: 50px;
-  background-color: #FFEC88;
   border-radius: 50px;
   text-align: center;
   vertical-align: middle;
@@ -104,26 +103,31 @@ html body header .header > .question {
 }
 
 html body header .header > .question > p {
-  padding-top: 10px;
+  background-color: #FFEC88;
+  border-radius: 50px;
+  padding: 10px 0;
   font-size: 1.2em;
 }
 
 html body > .pop {
   position: fixed;
   top: 80%;
-  left: 8%;
-  z-index: 105;
+  left: 45px;
+  z-index: 300;
   display: none;
 }
 
 html body > .pop > .ans {
-  padding: 15px 20px 30px;
+  text-align: left;
+  /* vertical-align: center; */
+  width: 400px;
+  height: 100px;
+  padding: 15px 20px 8px;
   background-color: #FFEC88;
   border-radius: 30px;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 1.2;
-  width: 350px;
-  height: 70px;
+  display: inline-block;
 }
 
 html body > .pop.active {
@@ -208,11 +212,15 @@ html body main > .contact > .down > ul > li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 10px 0;
 }
 
 html body main > .contact > .down > ul > li > svg {
-  width: 45%;
+  width: 40%;
   -webkit-transform: translateX(-10px);
           transform: translateX(-10px);
 }
@@ -221,15 +229,27 @@ html body main > .contact > .down > ul > li > img {
   width: 20%;
 }
 
-html body main > .contact > .down > ul > li > p {
+html body main > .contact > .down > ul > li > p,
+html body main > .contact > .down > ul > li a {
   padding-top: 15px;
   width: 70%;
   font-size: 1em;
 }
 
-html body main > .contact > .down > ul > li:nth-of-type(1) > p {
+html body main > .contact > .down > ul > li:nth-of-type(1) > a {
   -webkit-transform: translateX(-42px);
           transform: translateX(-42px);
+  padding-bottom: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body main > .contact > .down > ul > li:nth-of-type(1) > a:hover {
+  color: white;
 }
 
 html body main > .contact > .down > ul > li:nth-of-type(2) > img {
@@ -237,8 +257,22 @@ html body main > .contact > .down > ul > li:nth-of-type(2) > img {
   width: 17%;
 }
 
+html body main > .contact > .down > ul > li:nth-of-type(2) > a {
+  padding-bottom: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html body main > .contact > .down > ul > li:nth-of-type(2) > a:hover {
+  color: white;
+}
+
 html body main > .contact > .down > ul > li:nth-of-type(3) > img {
-  margin-left: 12px;
+  margin-left: 10px;
   padding-top: 5px;
   width: 20%;
 }

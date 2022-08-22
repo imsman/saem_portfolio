@@ -213,6 +213,8 @@ body>main>.top {
     align-items: center;
     border-bottom: 2px solid #E8E5FF;
     background-color: white;
+    position:relative;
+    z-index:100;
 }
 
 body>main>.top>.resume {
