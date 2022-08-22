@@ -24,7 +24,7 @@ $.ajax({
 
         function basicFn(num) {
             var canvas = document.getElementsByTagName("canvas")[0];
-            var ctx = canvas.getContext('2d');
+            var ctx = canvas.getContext("2d");
             let size = { w: canvas.width, h: canvas.height };
 
             let p = { per: dd[num].percentage, ang: Math.PI * 2 };

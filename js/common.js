@@ -1,8 +1,9 @@
-const mark = document.querySelector('.question');
-const copy = document.querySelector('.pop');
+$('header').load('inc.html > header > .load');
 
-mark.addEventListener('click', function () {
-    copy.classList.toggle('active');
+$(document).on('ready',function(){
+    $('#question').on('click', function () {
+        $('.pop').addClass('active');
+    })
 })
 
 // const indi = document.querySelectorAll('.indi>ul>li');
@@ -19,6 +20,6 @@ mark.addEventListener('click', function () {
 //         console.log(idx);
 
 //         indi.removeClass('here');
-//         indi[idx].addClass('here'); 
+//         indi[idx].addClass('here');
 //     })
 // })

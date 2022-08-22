@@ -37,6 +37,16 @@ $.ajax({
 
         $('.content > ul').html(site);
 
+        // console.log($('.more > a:nth-of-type(1)'));
+
+        $('.more > a:nth-of-type(1)').on('click',function(){
+            event.preventDefault();
+            console.log($(this).attr('href'));
+
+            var ret = window.open(`${$(this).attr('href')}`,"_blank","width=680px,height=900px");
+        })
+        //자 이제 여기서 각각 화면크기다르게하는것만 추가하면됨
+
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
