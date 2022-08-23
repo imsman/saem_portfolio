@@ -8,9 +8,8 @@
     <title>profile</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="./js/common.js"></script>
     <script defer src="./js/profile.js"></script>
+    <script defer src="./js/common.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -20,22 +19,93 @@
 
 <body>
     <header>
+        <div class="header">
+            <a href="./index.html">
+                <img src="./img/contactme_white.png" alt="logo">
+            </a>
+
+            <div class="indi">
+                <ul>
+                    <li>
+                        <a href="./profile.html">
+                            <svg width="40" height="35" viewBox="0 0 40 35" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M28.75 0.662808C30.83 -1.63908 36.0325 2.39124 28.75 7.57117C21.4675 2.39124 26.67 -1.63908 28.75 0.662808ZM22.5 10.7696C22.5 12.9117 21.7098 14.9661 20.3033 16.4807C18.8968 17.9954 16.9891 18.8464 15 18.8464C13.0109 18.8464 11.1032 17.9954 9.6967 16.4807C8.29018 14.9661 7.5 12.9117 7.5 10.7696C7.5 8.62748 8.29018 6.57311 9.6967 5.05842C11.1032 3.54373 13.0109 2.69278 15 2.69278C16.9891 2.69278 18.8968 3.54373 20.3033 5.05842C21.7098 6.57311 22.5 8.62748 22.5 10.7696ZM0 32.3077C0 35 2.5 35 2.5 35H27.5C27.5 35 30 35 30 32.3077C30 29.6155 27.5 21.5387 15 21.5387C2.5 21.5387 0 29.6155 0 32.3077ZM33.75 10.5273C37.2175 6.6908 45.8875 13.408 33.75 22.0421C21.615 13.408 30.2825 6.6908 33.75 10.53V10.5273ZM37.5 3.137C38.8875 1.60241 42.355 4.28929 37.5 7.74347C32.645 4.28929 36.1125 1.60241 37.5 3.13969V3.137Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./skills.html">
+                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 23L20 29L30 17" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M22 42C33.0457 42 42 33.0457 42 22C42 10.9543 33.0457 2 22 2C10.9543 2 2 10.9543 2 22C2 33.0457 10.9543 42 22 42Z"
+                                    stroke="white" stroke-width="4" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./projects.html">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M34.1666 6.66602H5.83331C4.4526 6.66602 3.33331 7.7853 3.33331 9.16602V30.8327C3.33331 32.2134 4.4526 33.3327 5.83331 33.3327H34.1666C35.5474 33.3327 36.6666 32.2134 36.6666 30.8327V9.16602C36.6666 7.7853 35.5474 6.66602 34.1666 6.66602Z"
+                                    stroke="white" stroke-width="4" stroke-linejoin="round" />
+                                <path
+                                    d="M3.33331 9.16602C3.33331 8.50297 3.59671 7.86709 4.06555 7.39825C4.53439 6.92941 5.17027 6.66602 5.83331 6.66602H34.1666C34.8297 6.66602 35.4656 6.92941 35.9344 7.39825C36.4033 7.86709 36.6666 8.50297 36.6666 9.16602V16.666H3.33331V9.16602Z"
+                                    stroke="white" stroke-width="4" />
+                                <path
+                                    d="M6.66667 11.6654C6.66667 10.7449 7.41286 9.9987 8.33333 9.9987C9.25381 9.9987 10 10.7449 10 11.6654C10 12.5858 9.25381 13.332 8.33333 13.332C7.41286 13.332 6.66667 12.5858 6.66667 11.6654Z"
+                                    fill="white" />
+                                <path
+                                    d="M11.6667 11.6654C11.6667 10.7449 12.4129 9.9987 13.3333 9.9987C14.2538 9.9987 15 10.7449 15 11.6654C15 12.5858 14.2538 13.332 13.3333 13.332C12.4129 13.332 11.6667 12.5858 11.6667 11.6654Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37.5 37.5H7.5C6.50544 37.5 5.55161 37.1049 4.84835 36.4017C4.14509 35.6984 3.75 34.7446 3.75 33.75V11.0869C3.79206 10.1209 4.20564 9.20842 4.9044 8.54006C5.60315 7.87171 6.53307 7.49909 7.5 7.5H37.5C38.4946 7.5 39.4484 7.89509 40.1516 8.59835C40.8549 9.30161 41.25 10.2554 41.25 11.25V33.75C41.25 34.7446 40.8549 35.6984 40.1516 36.4017C39.4484 37.1049 38.4946 37.5 37.5 37.5ZM7.5 14.7525V33.75H37.5V14.7525L22.5 24.75L7.5 14.7525ZM9 11.25L22.5 20.25L36 11.25H9Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <p id="question">?</p>
+            </div>
+        </div>
     </header>
 
     <div class="pop">
-        이 사이트는 개인 포트폴리오를 목적으로 제작된 페이지입니다.
-        Copyright @안새미_Saem
+        <div class="ans">
+            이 사이트는 개인 포트폴리오를 목적으로 제작된 페이지입니다.<br>
+            Copyright @안새미_Saem
+        </div>
     </div>
 
     <main>
         <div class="top">
             <div class="resume">
-                <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M2.33331 25.3333L3.36831 29.475C3.54857 30.1961 3.96469 30.8363 4.55053 31.2938C5.13637 31.7513 5.85833 31.9999 6.60165 32H31.3983C32.1416 31.9999 32.8636 31.7513 33.4494 31.2938C34.0353 30.8363 34.4514 30.1961 34.6316 29.475L35.6666 25.3333M19 22V2V22ZM19 22L12.3333 15.3333L19 22ZM19 22L25.6666 15.3333L19 22Z"
-                        stroke="#979797" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <p>If you like me, download my resume :)</p>
+                <a href="./안새미_입사지원서.hwp">
+                    <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.33331 25.3333L3.36831 29.475C3.54857 30.1961 3.96469 30.8363 4.55053 31.2938C5.13637 31.7513 5.85833 31.9999 6.60165 32H31.3983C32.1416 31.9999 32.8636 31.7513 33.4494 31.2938C34.0353 30.8363 34.4514 30.1961 34.6316 29.475L35.6666 25.3333M19 22V2V22ZM19 22L12.3333 15.3333L19 22ZM19 22L25.6666 15.3333L19 22Z"
+                            stroke="#979797" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p>If you like me, download my resume :)</p>
+                </a>
             </div>
             <div class="me">
                 <p>
@@ -94,10 +164,13 @@
                             </li>
                         </ul>
                     </div>
-                    <marquee class="back_text" scrolldelay="1">
-                        Web_Publisher,
-                        UI/UX Designer
-                    </marquee>
+                    <div class="marq">
+                        <p>
+                            Web_Publisher
+                            UI/UX Designer
+                        </p>
+                    </div>
+
                 </div>
             </div>
 
@@ -144,9 +217,8 @@
                                 시간약속은 꼭 지킵니다</p>
                         </div>
                         <div class="hover">
-                            <p>한번 거른 끼니는 다시는 먹을 수 없다는 아버지의 말씀을
-                                어려서부터 들었습니다. 한번 지난 시간은 다시 마주할 수
-                                없기 때문에 과거와 미래를 돌아보되 현재에 제일 충실하자는
+                            <p>한번 지난 시간은 다시 마주할 수
+                                없기 때문에 과거와 미래를 생각하되 현재에 제일 충실하자는
                                 생각으로 모든 사람의 시간을 소중히 여깁니다.</p>
                         </div>
                     </div>
@@ -162,8 +234,8 @@
                         </div>
                         <div class="hover">
                             <p>
-                                누구에게나 배울 점은 있다고 생각합니다. 사이가 좋지 않은
-                                상대일지라도 장점을 보고 배우며 항상 스스로를 되돌아보는
+                                누구에게나 배울 점은 있다고 생각합니다. 언제나 열린
+                                마음으로 상대의 장점을 보고 배우며 스스로를 되돌아보는
                                 자세를 가지려 노력합니다.
                             </p>
                         </div>
@@ -181,8 +253,10 @@
 
                         <div class="hover">
                             <p>
-                                오랜 시간 저와 함께 해 준 친구들과 지인들에게
-                                저에 대해 물어봤습니다.
+                                팀 프로젝트를 통해 최선의 결과를 위해서는
+                                원활한 소통이 제일 중요하다는 것을 깨달았습니다.
+                                동료들과 협력하며 언제나 더 나은 결과를
+                                향해 가는 퍼블리셔가 되겠습니다.
                             </p>
                         </div>
 

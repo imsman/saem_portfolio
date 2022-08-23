@@ -18,7 +18,7 @@ $.ajax({
                     ${v.dif}
                     </p>
                     <div class="more">    
-                        <a href="${v.link}" target="_blank" class="onClick">바로가기</a>
+                        <a href="${v.link}" target="_blank">바로가기</a>
                         <a href="${v.ppt}" target="_blank">기획안보기</a>
                     </div>
                 </div>
@@ -33,30 +33,9 @@ $.ajax({
 
         });
 
-        // console.log($('.more a').val());
+        // console.log($('.more a').val()); 비어있음 백그라운드 색회색으로 할까?+
 
         $('.content > ul').html(site);
-
-        // console.log($('.more > a:nth-of-type(1)'));
-
-        $('.onClick').on('click',function(){
-            event.preventDefault();
-            console.log($(this).attr('href'));
-
-
-            let ind = $('div.more').index($(this).parent());
-            console.log(ind);
-            
-            if(ind==2){
-                window.open(`${$(this).attr('href')}`,"_blank","width=380px,height=700px");
-            }else if(ind==1){
-            window.open(`${$(this).attr('href')}`,"_blank","width=680px,height=900px");
-            }else(
-                window.open(`${$(this).attr('href')}`,"_blank")
-            )
-        })
-        //바로빌과 생활쏙법은 크기 달라야함
-
 
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,

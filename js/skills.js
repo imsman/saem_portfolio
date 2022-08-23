@@ -77,7 +77,12 @@ $.ajax({
 })
 
 
-$('.wrap').on('click', function () {
+// $('.wrap').on('click', function () {
 
+// })
+
+$('.certi').on('click',function(){
+    $('.certi_sub').toggleClass('open');
+    $('.btn').toggleClass('open');
 })
 
