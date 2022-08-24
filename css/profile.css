@@ -73,26 +73,26 @@
 @-webkit-keyframes up {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   100% {
     opacity: 100%;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes up {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   100% {
     opacity: 100%;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -288,7 +288,7 @@ body > main > .introduce > .right > .ex {
 
 body > main > .introduce > .right > .ex > div {
   width: 50%;
-  height: 250px;
+  height: 230px;
   position: relative;
   text-align: center;
   margin-bottom: 30px;
@@ -347,25 +347,17 @@ body > main > .introduce > .right > .ex > div > .text > p {
 
 body > main > .introduce > .right > .ex > div > .hover {
   position: absolute;
-  left: 16%;
-  top: 8%;
-  width: 180%;
-  height: 400px;
+  left: 100%;
+  top: 5%;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 30px;
-  background-color: rgba(255, 236, 136, 0.6);
-  z-index: 102;
+  background-color: #ffec88;
+  z-index: 105;
   display: none;
   opacity: 0;
-}
-
-body > main > .introduce > .right > .ex > div > .hover > p {
-  width: 50%;
-  line-height: 1.2;
-  word-wrap: break-word;
-  margin: 100px auto;
-  margin-left: 43%;
-  font-size: 1.2em;
-  color: black;
 }
 
 body > main > .introduce > .right > .ex > div > .hover.active {
@@ -375,14 +367,41 @@ body > main > .introduce > .right > .ex > div > .hover.active {
   opacity: 100%;
 }
 
+body > main > .introduce > .right > .ex > div > .hover.active > ul {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  vertical-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+body > main > .introduce > .right > .ex > div > .hover.active > ul > li {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #383838;
+}
+
 body > main > .introduce > .right > .ex > div.one > img.icon {
   width: 10%;
   padding-right: 3px;
 }
 
 body > main > .introduce > .right > .ex > div.two {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 body > main > .introduce > .right > .ex > div.two > img.icon {
@@ -391,8 +410,8 @@ body > main > .introduce > .right > .ex > div.two > img.icon {
 }
 
 body > main > .introduce > .right > .ex > div.three {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 body > main > .introduce > .right > .ex > div.three > img.icon {
@@ -401,8 +420,8 @@ body > main > .introduce > .right > .ex > div.three > img.icon {
 }
 
 body > main > .introduce > .right > .ex > div.four {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 body > main > .introduce > .right > .ex > div.four > img.icon {
