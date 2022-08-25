@@ -37,6 +37,26 @@ $.ajax({
 
         $('.content > ul').html(site);
 
+        $('.onClick').on('click',function(){
+            event.preventDefault();
+            console.log($(this).attr('href'));
+
+
+            let ind = $('div.more').index($(this).parent());
+            console.log(ind);
+            
+            if(ind==2){
+                window.open(`${$(this).attr('href')}`,"_blank","width=380px,height=700px");
+            }else if(ind==1){
+            window.open(`${$(this).attr('href')}`,"_blank","width=680px,height=900px");
+            }else(
+                window.open(`${$(this).attr('href')}`,"_blank")
+            )
+        })
+        //바로빌과 생활쏙법은 크기 달라야함
+
+
+
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
