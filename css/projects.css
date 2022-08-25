@@ -13,6 +13,35 @@ main>.title {
     animation: slide 0.5s forwards ease-in-out;
 }
 
+main > .tab{
+    margin:0;
+    margin-left:100px;
+    margin-bottom:40px;
+    width:80%;
+}
+main > .tab >ul{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    vertical-align: center;
+    align-items: center;
+}
+main > .tab >ul>li{
+    font-family:'Pretendard-Regular';
+    font-weight:lighter;
+    font-size:1.1em;
+    margin-right:30px;
+    padding:5px;
+    border-radius: 30px;
+    background-color:rgba(255, 236, 136, 0.6);
+    background-size:0;
+}
+
+.tab > ul > li:hover {
+    background-color: rgba(255, 236, 136, 0.6);
+    background-size:100%;
+
+}
 @keyframes slide{
     0%{transform:translateY(-200px);}
     100%{transform:translateY(0px);}

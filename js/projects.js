@@ -56,7 +56,6 @@ $.ajax({
         //바로빌과 생활쏙법은 크기 달라야함
 
 
-
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
