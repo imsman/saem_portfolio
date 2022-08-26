@@ -1,0 +1,225 @@
+@import url("./common.css");
+main .content {
+  width: 80%;
+  margin: 50px 0 0;
+  margin-left: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+main .content > ul {
+  margin-top: 20px;
+  width: 100%;
+  height: 900px;
+  list-style: none;
+  list-style-type: none;
+}
+
+main .content > ul > li#art,
+main .content > ul li#ill {
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+main .content > ul > li#art > .slide,
+main .content > ul li#ill > .slide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: top;
+  position: relative;
+}
+
+main .content > ul > li#art > .slide > .intro,
+main .content > ul li#ill > .slide > .intro {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: center;
+  margin-left: 20px;
+  position: relative;
+}
+
+main .content > ul > li#art > .slide > .intro > .num,
+main .content > ul li#ill > .slide > .intro > .num {
+  width: 100;
+  font-size: 200px;
+  letter-spacing: -10px;
+  font-weight: bolder;
+}
+
+main .content > ul > li#art > .slide > .intro > .name,
+main .content > ul li#ill > .slide > .intro > .name {
+  font-size: 3em;
+  font-weight: lighter;
+  position: absolute;
+  top: 15%;
+  left: 2%;
+}
+
+main .content > ul > li#art > .slide > .intro > .tool,
+main .content > ul li#ill > .slide > .intro > .tool {
+  font-size: 1em;
+  display: inline-block;
+  color: #a3a3a3;
+  margin-top: 15px;
+  margin-left: 300px;
+}
+
+main .content > ul > li#art > .slide > .intro > .ex,
+main .content > ul li#ill > .slide > .intro > .ex {
+  margin-top: 10px;
+  color: #a3a3a3;
+  font-size: 1.1em;
+  white-space: pre-line;
+  line-height: 1.2;
+  word-wrap: break-word;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+main .content > ul > li#art > .slide > .pre,
+main .content > ul li#ill > .slide > .pre {
+  width: 60%;
+  height: 550px;
+  position: relative;
+  margin-right: 0;
+  margin-top: 50px;
+}
+
+main .content > ul > li#art > .slide > .pre > .bg,
+main .content > ul li#ill > .slide > .pre > .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 200%;
+  height: 100%;
+  background-color: #aba0d8;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+main .content > ul > li#art > .slide > .pre > img,
+main .content > ul li#ill > .slide > .pre > img {
+  width: 90%;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .content > ul > li#vid {
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+main .content > ul > li#vid > .slide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  vertical-align: top;
+  position: relative;
+}
+
+main .content > ul > li#vid > .slide > .intro {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: center;
+  margin-left: 20px;
+  position: relative;
+}
+
+main .content > ul > li#vid > .slide > .intro > .num {
+  width: 100;
+  font-size: 200px;
+  letter-spacing: -10px;
+  font-weight: bolder;
+}
+
+main .content > ul > li#vid > .slide > .intro > .name {
+  font-size: 3em;
+  font-weight: lighter;
+  position: absolute;
+  top: 15%;
+  left: 2%;
+}
+
+main .content > ul > li#vid > .slide > .intro > .tool {
+  font-size: 1em;
+  display: inline-block;
+  color: #a3a3a3;
+  margin-top: 15px;
+  margin-left: 300px;
+}
+
+main .content > ul > li#vid > .slide > .intro > .ex {
+  margin-top: 10px;
+  color: #a3a3a3;
+  font-size: 1.1em;
+  white-space: pre-line;
+  line-height: 1.2;
+  word-wrap: break-word;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+main .content > ul > li#vid > .slide > .pre {
+  width: 60%;
+  height: 550px;
+  position: relative;
+  margin-right: 0;
+  margin-top: 50px;
+}
+
+main .content > ul > li#vid > .slide > .pre > .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 200%;
+  height: 100%;
+  background-color: #aba0d8;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+main .content > ul > li#vid > .slide > .pre > iframe {
+  width: 80%;
+  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=projects_listFn.css.map */

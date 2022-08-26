@@ -7,6 +7,10 @@ html {
     overflow: hidden;
 }
 
+main{
+    position:relative;
+}
+
 main>.title {
     margin: 70px 0 40px;
     margin-left: 100px;
@@ -14,11 +18,15 @@ main>.title {
 }
 
 main > .tab{
-    margin:0;
-    margin-left:100px;
-    margin-bottom:40px;
-    width:80%;
+    position:absolute;
+    top:13.5%; left:20%;
+    width:70%;
+    z-index: 110;
+    background-color: white;
+    animation: slide 0.5s forwards ease-in-out;
 }
+
+
 main > .tab >ul{
     width:100%;
     display:flex;
@@ -26,20 +34,29 @@ main > .tab >ul{
     vertical-align: center;
     align-items: center;
 }
+
 main > .tab >ul>li{
     font-family:'Pretendard-Regular';
     font-weight:lighter;
-    font-size:1.1em;
+    /* font-size:1.1em; */
     margin-right:30px;
-    padding:5px;
+    padding:5px 10px;
     border-radius: 30px;
     background-color:rgba(255, 236, 136, 0.6);
     background-size:0;
 }
 
-.tab > ul > li:hover {
+.tab > ul >li > button{
+    outline:none;
+    background-color: transparent;
+    border:none;
+    font-size:14px;
+    letter-spacing: 1px;
+}
+.tab > ul > li:hover >button{
     background-color: rgba(255, 236, 136, 0.6);
     background-size:100%;
+    color:#8563E7;
 
 }
 @keyframes slide{
@@ -52,6 +69,7 @@ main>.content {
     margin: 50px 0 0;
     margin-left: 100px;
     position:relative;
+    overflow:hidden;
 }
 
 main>.content>ul {
@@ -246,3 +264,5 @@ main > a:hover {
     background-color: #3d2486;
     opacity: 70%;
 }
+
+

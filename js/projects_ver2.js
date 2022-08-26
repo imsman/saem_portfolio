@@ -43,58 +43,61 @@ $.ajax({
             function artwork() {
                 $.each(data.photoshop, function (k, v) {
                     listTag += `
-                    <li class="swiper-slide"> 
-                    <div class="slide">
-                        <div class="intro">
-                            <p class="num">${v.num}</p>
-                            <p class="name">${v.name}</p>
-                            <p class="tool">${v.sub}></p>
-                            <p class="ex">${v.ex}</p>
-                        </div>
+                    <li id="art" class="swiper-slide"> 
+                        <div class="slide">
+                            <div class="intro">
+                                <p class="num">${v.num}</p>
+                                <p class="name">${v.name}</p>
+                                <p class="tool">${v.sub}></p>
+                                <p class="ex">${v.ex}</p>
+                            </div>
 
-                        <div class="pre">
-                            <img src="${v.img}" alt="">
+                            <div class="pre">
+                                <div class="bg></div>
+                                <img src="${v.img}" alt="">
+                            </div>
                         </div>
-                    </div>
-                </li>`;
+                    </li>`;
                 })
             }
 
             function illust() {
                 $.each(data.illust, function (k, v) {
                     listTag += `
-                    <li class="swiper-slide"> 
-                    <div class="slide">
-                        <div class="intro">
-                            <p class="num">${v.num}</p>
-                            <p class="name">${v.name}</p>
-                            <p class="tool">${v.sub}></p>
-                            <p class="ex">${v.ex}</p>
-                        </div>
+                    <li id="ill" class="swiper-slide"> 
+                        <div class="slide">
+                            <div class="intro">
+                                <p class="num">${v.num}</p>
+                                <p class="name">${v.name}</p>
+                                <p class="tool">${v.sub}></p>
+                                <p class="ex">${v.ex}</p>
+                            </div>
 
-                        <div class="pre">
-                            <img src="${v.img}" alt="">
+                            <div class="pre">
+                                <div class="bg></div>
+                                <img src="${v.img}" alt="">
+                            </div>
                         </div>
-                    </div>
-                </li>`;
+                    </li>`;
                 })
             }
 
             function video() {
                 $.each(data.aftereffect, function (k, v) {
                     listTag += `
-                    <li class="swiper-slide">
+                        <li id="vid" class="swiper-slide">
                             <div class="slide">
-                                <p class="num">${v.num}</p>
-                                    <p class="name">${v.name}</p>
-                                    <p class="tool">${v.sub}></p>
-                                    <p class="ex">${v.ex}</p>
+                                <div class="intro">
+                                    <p class="num">${v.num}</p>
+                                        <p class="name">${v.name}</p>
+                                        <p class="tool">${v.sub}></p>
+                                        <p class="ex">${v.ex}</p>
                                 </div>
 
                                 <div class="pre">
+                                    <div class="bg"></div>
                                     <iframe src="${v.url}">
                                 </div>
-                            </div>
                             </div>
                         </li>`;
                 })
