@@ -69,7 +69,7 @@
             "sub": "포토샵으로 제작한 아트워크(노이즈효과,타이포그래피)",
             "ex": "제 자신이 좋아하는 분야를 골라 콜라주식 자기소개 이미지를 제작했습니다.",
             "percentage": "100%",
-            "img": "./img/media/myself.png"
+            "img": "./img/media/intro.jpg"
         },
         {
             "name": "tank_rainy",
@@ -95,7 +95,7 @@
             "sub": "캐릭터디자인",
             "ex": "'토람'캐릭터를 변화시켜 채색한 후, 우주여행을 컨셉으로 스티커를 제작했습니다.",
             "percentage": "100%",
-            "img": "./img/media/toram_universe.png"
+            "img": "./img/media/toram_universe.jpg"
         }
     ],
     "aftereffect": [

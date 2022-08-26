@@ -45,11 +45,9 @@ main .content > ul li#ill > .slide > .intro {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   vertical-align: center;
   margin-left: 20px;
   position: relative;
@@ -57,28 +55,32 @@ main .content > ul li#ill > .slide > .intro {
 
 main .content > ul > li#art > .slide > .intro > .num,
 main .content > ul li#ill > .slide > .intro > .num {
-  width: 100;
+  width: 100%;
   font-size: 200px;
   letter-spacing: -10px;
   font-weight: bolder;
+  color: rgba(255, 236, 136, 0.8);
 }
 
 main .content > ul > li#art > .slide > .intro > .name,
 main .content > ul li#ill > .slide > .intro > .name {
   font-size: 3em;
   font-weight: lighter;
+  letter-spacing: -2px;
   position: absolute;
-  top: 15%;
+  top: 16%;
   left: 2%;
+  z-index: 5;
 }
 
 main .content > ul > li#art > .slide > .intro > .tool,
 main .content > ul li#ill > .slide > .intro > .tool {
-  font-size: 1em;
-  display: inline-block;
+  font-size: 20px;
   color: #a3a3a3;
-  margin-top: 15px;
-  margin-left: 300px;
+  word-wrap: break-word;
+  margin-top: 30px;
+  -webkit-transform: translate(15px, -20px);
+          transform: translate(15px, -20px);
 }
 
 main .content > ul > li#art > .slide > .intro > .ex,
@@ -100,28 +102,20 @@ main .content > ul li#ill > .slide > .pre {
   position: relative;
   margin-right: 0;
   margin-top: 50px;
-}
-
-main .content > ul > li#art > .slide > .pre > .bg,
-main .content > ul li#ill > .slide > .pre > .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 200%;
-  height: 100%;
-  background-color: #aba0d8;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  text-align: center;
 }
 
 main .content > ul > li#art > .slide > .pre > img,
 main .content > ul li#ill > .slide > .pre > img {
-  width: 90%;
+  width: 40%;
   margin: auto;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+main .content > ul > li#art:nth-of-type(2) img {
+  width: 150%;
 }
 
 main .content > ul > li#vid {
@@ -151,40 +145,46 @@ main .content > ul > li#vid > .slide > .intro {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   vertical-align: center;
   margin-left: 20px;
   position: relative;
+  text-align: left;
 }
 
 main .content > ul > li#vid > .slide > .intro > .num {
-  width: 100;
+  width: 100%;
   font-size: 200px;
   letter-spacing: -10px;
   font-weight: bolder;
+  color: rgba(255, 236, 136, 0.8);
 }
 
 main .content > ul > li#vid > .slide > .intro > .name {
+  width: 100%;
   font-size: 3em;
   font-weight: lighter;
+  letter-spacing: -2px;
   position: absolute;
-  top: 15%;
+  top: 16%;
   left: 2%;
+  z-index: 5;
 }
 
 main .content > ul > li#vid > .slide > .intro > .tool {
-  font-size: 1em;
-  display: inline-block;
+  width: 100%;
+  font-size: 20px;
   color: #a3a3a3;
-  margin-top: 15px;
-  margin-left: 300px;
+  word-wrap: break-word;
+  margin-top: 30px;
+  -webkit-transform: translate(15px, -20px);
+          transform: translate(15px, -20px);
 }
 
 main .content > ul > li#vid > .slide > .intro > .ex {
+  width: 100%;
   margin-top: 10px;
   color: #a3a3a3;
   font-size: 1.1em;
@@ -201,6 +201,10 @@ main .content > ul > li#vid > .slide > .pre {
   position: relative;
   margin-right: 0;
   margin-top: 50px;
+  vertical-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .content > ul > li#vid > .slide > .pre > .bg {
@@ -211,15 +215,17 @@ main .content > ul > li#vid > .slide > .pre > .bg {
   width: 200%;
   height: 100%;
   background-color: #aba0d8;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-radius: 30px;
 }
 
-main .content > ul > li#vid > .slide > .pre > iframe {
+main .content > ul > li#vid > .slide > .pre > a {
   width: 80%;
-  margin: auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  position: absolute;
+  left: 10%;
+  top: 45%;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'GangwonEdu_OTFLightA';
+  color: white;
 }
 /*# sourceMappingURL=projects_listFn.css.map */

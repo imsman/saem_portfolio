@@ -48,12 +48,11 @@ $.ajax({
                             <div class="intro">
                                 <p class="num">${v.num}</p>
                                 <p class="name">${v.name}</p>
-                                <p class="tool">${v.sub}></p>
+                                <p class="tool">${v.sub}</p>
                                 <p class="ex">${v.ex}</p>
                             </div>
 
                             <div class="pre">
-                                <div class="bg></div>
                                 <img src="${v.img}" alt="">
                             </div>
                         </div>
@@ -69,12 +68,11 @@ $.ajax({
                             <div class="intro">
                                 <p class="num">${v.num}</p>
                                 <p class="name">${v.name}</p>
-                                <p class="tool">${v.sub}></p>
+                                <p class="tool">${v.sub}</p>
                                 <p class="ex">${v.ex}</p>
                             </div>
 
                             <div class="pre">
-                                <div class="bg></div>
                                 <img src="${v.img}" alt="">
                             </div>
                         </div>
@@ -89,14 +87,14 @@ $.ajax({
                             <div class="slide">
                                 <div class="intro">
                                     <p class="num">${v.num}</p>
-                                        <p class="name">${v.name}</p>
-                                        <p class="tool">${v.sub}></p>
-                                        <p class="ex">${v.ex}</p>
+                                    <p class="name">${v.name}</p>
+                                    <p class="tool">${v.sub}</p>
+                                    <p class="ex">${v.ex}</p>
                                 </div>
 
                                 <div class="pre">
                                     <div class="bg"></div>
-                                    <iframe src="${v.url}">
+                                    <a href="${v.url}">${v.url}</a>
                                 </div>
                             </div>
                         </li>`;
