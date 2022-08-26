@@ -135,11 +135,15 @@ $.ajax({
         });
 
         let field = '';
-        $('.tab ul li').on('click', function () {
-            field = $(this).text();
-            console.log(field)
+        $.each('#load',function(i,v){
+            v.on('click',function(){
+                field = $(this).children('button').text();
+                console.log(field);
+            })
 
-            if (field == 'Web_projects') {
+            
+
+            if (field == 'Web_project') {
                 $('.content > ul').html(site);
             } else if (field == 'Artwork') {
                 $('.content > ul').html(artwork);
@@ -148,6 +152,8 @@ $.ajax({
             } else if (field == 'Video') {
                 $('.content > ul').html(video);
             }
+            //함수로 묶어두면 편하게쮜?
+            //변수는 매개변수로 하나로 통일.
         })
     }
 })
