@@ -25,12 +25,12 @@ $.ajax({
                             ${v.dif}
                             </p>
                             <div class="more">    
-                                <a href="${v.link}" target="_blank">바로가기</a>
+                                <a href="${v.link}" target="_blank" class="onClick">바로가기</a>
                                 <a href="${v.ppt}" target="_blank">기획안보기</a>
                             </div>
                         </div>
                         <div class="preview">
-                            <a href="${v.link}" target="_blank">
+                            <a href="${v.link}" target="_blank" class="onClick">
                                 <img src="${v.img}" alt="preview">
                                 <div class="bg"></div>
                             </a>
