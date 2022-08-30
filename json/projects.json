@@ -24,8 +24,19 @@
             "ppt":"https://docs.google.com/presentation/d/17a_Rj8eT3OQRB1h4GITSLr2jhmB0DQ_lEH1Z54sycbY/edit?usp=sharing"
         },
         {
-            "name": "MINIDECO",
+            "name": "Portfolio",
             "num": "03",
+            "sub":"포트폴리오 웹사이트 제작",
+            "percentage":"100%",
+            "img": "./img/projects/portfolio_preview.png",
+            "bad":"퍼블리셔로서의 제 자신과 사람으로서의 제 자신을 소개하는 포트폴리오 페이지입니다.",
+            "dif":"아이디어를 행동으로 실천하는 퍼블리셔 안새미의 자기소개를 보실 수 있습니다.",
+            "link":"https://an-saemi.github.io/saem_portfolio/",
+            "ppt":"https://docs.google.com/presentation/d/1yBOxW9u7QcLxBbN30hctpLXclGQYyPUd-8rYHXlMsUg/edit#slide=id.p"
+        },
+        {
+            "name": "MINIDECO",
+            "num": "04",
             "sub":"미니어처 가구 쇼핑몰 리뉴얼",
             "percentage":"100%",
             "img": "./img/projects/preiew_img_minideco.png",
@@ -36,7 +47,7 @@
         },
         {
             "name": "TGIF",
-            "num": "04",
+            "num": "05",
             "sub":"TGIF 레스토랑 홈페이지 리뉴얼",
             "percentage":"100%",
             "img": "./img/projects/preiew_img_tgif.png",
