@@ -57,58 +57,7 @@
             "ppt":""
         }
     ],
-    "photoshop":[
-        {
-            "name": "cookie's adventure",
-            "num": "01",
-            "sub": "포토샵으로 제작한 아트워크(펜툴,필터효과)",
-            "ex": "일반 쿠키 사진을 펜툴로 크롭하여 새로운 배경을 입혀보았습니다.",
-            "percentage": "100%",
-            "img": "./img/media/cookie_artwork.jpg"
-        },
-        {
-            "name": "fantasy_lake",
-            "num": "02",
-            "sub": "포토샵으로 제작한 아트워크(합성,필터,브러시제작)",
-            "ex": "산 속 호수의 배경을 우주사진으로 바꾸어 미지의 행성에서 여행하는 탐험가를 표현해 보았습니다.",
-            "percentage": "100%",
-            "img": "./img/media/lake_artwork.jpg"
-        },
-        {
-            "name": "letmeintroduce",
-            "num": "03",
-            "sub": "포토샵으로 제작한 아트워크(노이즈효과,타이포그래피)",
-            "ex": "제 자신이 좋아하는 분야를 골라 콜라주식 자기소개 이미지를 제작했습니다.",
-            "percentage": "100%",
-            "img": "./img/media/intro.jpg"
-        },
-        {
-            "name": "tank_rainy",
-            "num": "04",
-            "sub": "포토샵으로 제작한 아트워크(필터효과, 합성, 펜툴 사용)",
-            "ex": "주어진 이미지를 활용하여 비오는 날 전쟁터를 표현했습니다.",
-            "percentage": "100%",
-            "img": "./img/media/Tank_artwork.jpg"
-        }
-    ],
-    "illust":[
-        {
-            "name": "toram",
-            "num": "01",
-            "sub": "캐릭터디자인",
-            "ex": "토끼와 다람쥐가 합쳐진 '토람이' 캐릭터입니다.",
-            "percentage": "100%",
-            "img": "./img/media/toram.png"
-        },
-        {
-            "name": "toram_universe",
-            "num": "02",
-            "sub": "캐릭터디자인",
-            "ex": "'토람'캐릭터를 변화시켜 채색한 후, 우주여행을 컨셉으로 스티커를 제작했습니다.",
-            "percentage": "100%",
-            "img": "./img/media/toram_universe.jpg"
-        }
-    ],
+
     "aftereffect": [
         {
             "name": "cheetah",

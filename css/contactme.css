@@ -2,21 +2,17 @@
 html {
   width: 100%;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#7E5AC7), to(#E8DED3));
   background: linear-gradient(#7E5AC7, #E8DED3);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
 html body {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: 100%;
   overflow: hidden;
 }
-
 html body header .header {
   width: 140px;
   height: 100vh;
@@ -25,73 +21,46 @@ html body header .header {
   top: 0%;
   z-index: 100;
   background-color: #8563E7;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   vertical-align: middle;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 html body header .header > a {
   width: 60%;
   margin: 50px auto;
-  -webkit-animation: rot 2s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
-          animation: rot 2s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
+  animation: rot 2s infinite cubic-bezier(0.51, 0.57, 0.79, 0.75);
 }
-
 html body header .header > a > img {
   width: 100%;
 }
-
 html body header .header > a:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
 }
-
 html body header .header .indi {
   width: 60%;
   margin: 50px auto;
   padding-bottom: 30px;
 }
-
 html body header .header .indi > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 html body header .header .indi > ul > li {
   width: 100%;
 }
-
 html body header .header .indi > ul > li > a {
   width: 100%;
 }
-
 html body header .header .indi > ul > li > a > svg {
   width: 100%;
   margin-bottom: 30px;
 }
-
 html body header .header .indi > ul > li > a > svg.active {
   stroke: black;
 }
-
 html body header .header > .question {
   width: 50px;
   margin: 50px auto;
@@ -101,14 +70,12 @@ html body header .header > .question {
   vertical-align: middle;
   padding-top: 5.5%;
 }
-
 html body header .header > .question > p {
   background-color: #FFEC88;
   border-radius: 50px;
   padding: 10px 0;
   font-size: 1.2em;
 }
-
 html body > .pop {
   position: fixed;
   top: 80%;
@@ -116,7 +83,6 @@ html body > .pop {
   z-index: 300;
   display: none;
 }
-
 html body > .pop > .ans {
   text-align: left;
   /* vertical-align: center; */
@@ -129,30 +95,25 @@ html body > .pop > .ans {
   line-height: 1.2;
   display: inline-block;
 }
-
 html body > .pop.active {
   display: block;
 }
-
 html body main {
   width: 80%;
   margin-top: 100px;
   margin-left: 200px;
   position: relative;
 }
-
 html body main > .text {
   margin-top: 50px;
   margin-left: 100px;
 }
-
 html body main > .text > p.top {
   font-size: 4em;
   color: white;
   font-weight: bold;
   white-space: pre-line;
 }
-
 html body main > .text > p.ex {
   margin-top: 40px;
   font-size: 1.2em;
@@ -160,14 +121,12 @@ html body main > .text > p.ex {
   color: white;
   white-space: pre-line;
 }
-
 html body main > .contact {
   width: 15%;
   margin-top: 100px;
   margin-left: 150px;
   text-align: center;
 }
-
 html body main > .contact > p {
   width: 70%;
   background-color: #FFEC88;
@@ -175,113 +134,79 @@ html body main > .contact > p {
   font-size: 1.3em;
   padding: 10px 5px 8px;
   color: black;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 html body main > .contact > p:hover {
   background-color: white;
   color: #7E5AC7;
 }
-
 html body main > .contact > .down {
   margin-top: 40px;
 }
-
 html body main > .contact > .down > ul {
   width: 90%;
   height: 200px;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 html body main > .contact > .down > ul > li {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   vertical-align: middle;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 10px 0;
 }
-
 html body main > .contact > .down > ul > li > svg {
   width: 40%;
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
+  transform: translateX(-10px);
 }
-
 html body main > .contact > .down > ul > li > img {
   width: 20%;
 }
-
 html body main > .contact > .down > ul > li > p,
 html body main > .contact > .down > ul > li a {
   padding-top: 15px;
   width: 70%;
   font-size: 1em;
 }
-
 html body main > .contact > .down > ul > li:nth-of-type(1) > a {
-  -webkit-transform: translateX(-42px);
-          transform: translateX(-42px);
+  transform: translateX(-42px);
   padding-bottom: 10px;
   color: black;
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 html body main > .contact > .down > ul > li:nth-of-type(1) > a:hover {
   color: white;
 }
-
 html body main > .contact > .down > ul > li:nth-of-type(2) > img {
   margin-left: 12px;
   width: 17%;
 }
-
 html body main > .contact > .down > ul > li:nth-of-type(2) > a {
   padding-bottom: 10px;
   color: black;
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 html body main > .contact > .down > ul > li:nth-of-type(2) > a:hover {
   color: white;
 }
-
 html body main > .contact > .down > ul > li:nth-of-type(3) > img {
   margin-left: 10px;
   padding-top: 5px;
   width: 20%;
 }
-
 html body main > .contact > .down > ul > li:nth-of-type(3) > p {
-  -webkit-transform: translateX(-18px);
-          transform: translateX(-18px);
+  transform: translateX(-18px);
 }
-
 html body main > .illust {
   width: 40%;
   position: fixed;
@@ -289,8 +214,6 @@ html body main > .illust {
   left: 55%;
   z-index: 10;
 }
-
 html body main > .illust > img {
   width: 70%;
-}
-/*# sourceMappingURL=contactme.css.map */
+}/*# sourceMappingURL=contactme.css.map */
