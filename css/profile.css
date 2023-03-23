@@ -239,7 +239,6 @@ body > main > .introduce > .right > .ex > div > .hover.active > ul {
 }
 body > main > .introduce > .right > .ex > div > .hover.active > ul > li {
   font-size: 1em;
-  margin-top: 10px;
   color: rgb(56, 56, 56);
 }
 body > main > .introduce > .right > .ex > div.one > img.icon {
