@@ -214,6 +214,14 @@ main .web_footer svg:nth-of-type(4) {
   margin: 0px;
 }
 
-@media screen and (max-width:1440px){
+@media (max-width:380px){
+  main{margin:50px; }
+  main > div{padding:10px; width:100%;}
+  .hello > div{display:flex; flex-direction:row;}
+}
 
+@media (min-width:381px) and (max-width:800px){
+}
+
+@media (min-width:801px) and (max-width:1440px){
 }
